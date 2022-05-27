@@ -1,0 +1,18 @@
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\bin\Debug\Capa Logica Del Negocio.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\bin\Debug\Capa Logica Del Negocio.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\bin\Debug\Capa Acceso de Datos.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\bin\Debug\Capa Acceso de Datos.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csprojAssemblyReference.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csproj.CoreCompileInputs.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csproj.CopyComplete
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\Capa Logica Del Negocio.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\Capa Logica Del Negocio.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\Capa Acceso de Datos.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\Capa Acceso de Datos.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csprojAssemblyReference.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csproj.CoreCompileInputs.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csproj.CopyComplete
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0KArvMck4YcqeDeL1hc8k5KcV6L6fVZSeFwn7DOrk6CjhK76Zeqq5doRpzpVwdMHud7OmypjVEPbg4c0Utncmw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maynor\\OneDrive\\Escritorio\\Sistema\\Capa logica de negocio\\Capa logica de negocio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

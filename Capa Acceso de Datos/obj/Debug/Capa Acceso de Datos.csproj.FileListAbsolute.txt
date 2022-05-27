@@ -1,0 +1,5 @@
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\bin\Debug\Capa Acceso de Datos.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\bin\Debug\Capa Acceso de Datos.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.csproj.CoreCompileInputs.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.pdb
