@@ -136,7 +136,7 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAADk
-        CgAAAk1TRnQBSQFMAgEBAgEAAZgBAAGYAQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        CgAAAk1TRnQBSQFMAgEBAgEAAaABAAGgAQABGQEAARkBAAT/AQkBAAj/AUIBTQE2AQQGAAE2AQQCAAEo
         AwABZAMAARkDAAEBAQABCAUAAcQBCRgAAYACAAGAAwACgAEAAYADAAGAAQABgAEAAoACAAPAAQABwAHc
         AcABAAHwAcoBpgEAATMFAAEzAQABMwEAATMBAAIzAgADFgEAAxwBAAMiAQADKQEAA1UBAANNAQADQgEA
         AzkBAAGAAXwB/wEAAlAB/wEAAZMBAAHWAQAB/wHsAcwBAAHGAdYB7wEAAdYC5wEAAZABqQGtAgAB/wEz
@@ -1649,19 +1649,18 @@
         RK5CYII=
 </value>
   </data>
-  <data name="bunifuVScrollBar3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABEAAAENCAYAAADpDo6uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF7SURBVHhe7dwtTgNRGEbhykpkJZIlIJEsA0OCwSMRSBSC
-        TZDUYfujCKo7QIEqSSkNkICA95ZpUnoGyoA9N3kymZn7naazgNtaXf1+vxNHcTkYDMbxXq6578VxbFVb
-        61c27GfgfjgcvlXDdabZd1qNfF3ll7LhYWXgO7O4zky7Gp8HDvPwcWnTWr1e7yXXs0VgMzeT5Q0NTDK/
-        XSInufnpG6xzsfgWdS9/JfM3JfJc97KJVt3DpoyQETJCRsgIGSEjZISMkBEyQkbICBkhI2SEjJARMkJG
-        yAgZISNkhIyQETJCRsgIGSEjZISMkBEyQkbICBkhI2SEjJARMkJGyAgZISNkhIyQETJCRsgIGSEjZISM
-        kBEyQkbICBkhI1Qi/zn7ZK5ERqsPGxqXyPnKw0bKISzlEJWd3Pz1TJhZ5vcWh8t047Vm0zqjeaCsBNpx
-        1zB0m/2dKvG58mAjunm57q89xQiB5ZWXu9l0let0abB8wHIATRk+qLZWq9X6APaZeibaj3+dAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Column4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="bunifuSeparator4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATgAAAAKCAYAAAAgukJ4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8

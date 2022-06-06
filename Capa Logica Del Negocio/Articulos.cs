@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
-using Capa_Acceso_de_Datos;
+using System.Threading.Tasks;using Capa_Acceso_de_Datos;
 using System.Data;
+using MySql.Data.MySqlClient;
+using MySql.Data;
 
-using System.Data.SqlClient;
 
 namespace Capa_Logica_Del_Negocio
 {
@@ -32,11 +32,11 @@ namespace Capa_Logica_Del_Negocio
             return CD.Listado("ListarProductos", null);
         }
 
-
-        public String RegistrarProductos()
+        
+        public void RegistrarProductos()
         {
+
             List<Parametros> lst = new List<Parametros>();
-            String Mensaje;
 
             try
             {
@@ -48,15 +48,12 @@ namespace Capa_Logica_Del_Negocio
                 lst.Add(new Parametros("@PrecioCompra", Precio_Compra));
                 lst.Add(new Parametros("@PrecioVenta",Precio_Venta));
                 lst.Add(new Parametros("@Imagen", Imagen));
-                lst.Add(new Parametros("@Mensaje", "", SqlDbType.VarChar, ParameterDirection.Output, 50));
                 CD.EjecutarProcedimientosalmacenados("RegistrarArticulo", ref lst);
-                Mensaje = lst[7].Valor.ToString();
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-            return Mensaje;
         }
         
 

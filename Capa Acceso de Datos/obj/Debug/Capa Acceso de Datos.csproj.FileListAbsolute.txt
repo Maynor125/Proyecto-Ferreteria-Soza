@@ -3,3 +3,23 @@ C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\bin\Debug\Capa 
 C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.csproj.CoreCompileInputs.cache
 C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.dll
 C:\Users\maynor\OneDrive\Escritorio\Sistema\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\Capa Acceso de Datos.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\Capa Acceso de Datos.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\MySql.Data.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\Google.Protobuf.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\ZstdNet.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\System.Memory.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\System.Buffers.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\bin\Debug\MySql.Data.xml
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.csprojAssemblyReference.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.csproj.CoreCompileInputs.cache
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.csproj.CopyComplete
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.pdb

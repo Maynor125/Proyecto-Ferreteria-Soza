@@ -16,6 +16,12 @@ Descripcion Varchar(50) Not Null,
 Primary Key(Id_Categoria)
 )engine=innoDB;
 
+select*from categoria;
+insert into categoria values(1,'Carpinteria');
+insert into categoria (Descripcion) values('Construccion');
+
+
+
 /*Creacion de la tabla Unidades de medidas.*/
 Create table Unidad_Medida
 (
@@ -23,14 +29,15 @@ Id_Unidad int auto_increment
 ,Nombre varchar(40) not null
 ,primary key(Id_Unidad)
 )engine=innoDB;
+insert into unidad_medida (Nombre) values ('Libras');
 
 /*Creacion de la tabla Articulos.*/
 Create Table Articulo
 (Id_Articulo Int auto_increment,
-Id_Categoria Int Not Null References Categoria,
+Id_Categoria Int Not Null ,
 Nombre Varchar(50) Not Null,
 Marca Varchar(50),
-Id_Unidad int not null References Unidad_Medida,
+Id_Unidad int not null,
 Cantidad Int Not Null,
 PrecioCompra Decimal(6,2) Not Null,
 PrecioVenta Decimal(6,2) Not Null,
@@ -64,7 +71,7 @@ Direccion Varchar(100),
 Telefono Varchar(8),
 Primary Key(Id_Cliente)
 )engine=innoDB;
-
+select*from articulo;
 /*Creacion de la tabla Ventas*/
 Create Table Venta
 (Id_Venta Int auto_increment,
@@ -155,6 +162,21 @@ foreign key (Id_Proveedor)
 references Proveedores(Id_Proveedor) on delete cascade on update cascade;
 
 
+
+Create Procedure ListarCategoria
+()	
+Select * from Categoria;
+
+call ListarCategoria;
+drop procedure ListarProductos;
+
+Create Procedure ListarProductos
+()	
+Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad;
+
+call ListarProductos;
+
 alter table Detalle_Entrada_A
 add constraint fk_EAEA
 foreign key (Id_Entrada_A)
@@ -164,3 +186,19 @@ alter table Detalle_Entrada_A
 add constraint fk_EAA
 foreign key (Id_Producto)
 references Articulo(Id_Articulo) on delete cascade on update cascade;
+
+/*Procedimiento almacenado para insertar productos*/
+Create Procedure RegistrarArticulo
+(
+Id_Categoria Int,
+Nombre Varchar(50),
+Marca Varchar(50),
+Unidad int,
+Cantidad Int,
+PrecioCompra Decimal(6,2),
+PrecioVenta Decimal(6,2),
+Imagen blob
+)
+Insert Articulo(Id_Categoria,Nombre,Marca,Id_Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen)
+ Values(Id_Categoria,Nombre,Marca,Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen);
+

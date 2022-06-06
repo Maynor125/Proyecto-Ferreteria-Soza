@@ -5,32 +5,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Capa_Acceso_de_Datos
 {
     public class Conexion_de_datos
     {
-        public SqlConnection conexion = new SqlConnection("Data Source=LAPTOP-RR455DM5\\SQLEXPRESS;Initial Catalog=Ferreteria;Integrated Security=True");
+        //Conexion a mysql....
+        public MySqlConnection ObtenerConexion = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=Madara125;");
 
-        public void Conectar()
+        public void Conectarmy()
         {
-            if (conexion.State == ConnectionState.Closed)
-                conexion.Open();
+            if (ObtenerConexion.State == ConnectionState.Closed)
+                ObtenerConexion.Open();
+        }
+        public void Desconectarmy()
+        {
+            if (ObtenerConexion.State == ConnectionState.Open)
+                ObtenerConexion.Close();
         }
 
-        public void Desconectar()
-        {
-            if (conexion.State == ConnectionState.Open)
-                conexion.Close();
-        }
+       
         public DataTable Listado(String NombreSP, List<Parametros> lst)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da;
+            MySqlDataAdapter da;
             try
             {
-                Conectar();
-                da = new SqlDataAdapter(NombreSP, conexion);
+                Conectarmy();
+                da = new MySqlDataAdapter(NombreSP, ObtenerConexion);
                 da.SelectCommand.CommandType = CommandType.StoredProcedure;
                 if (lst != null)
                 {
@@ -45,16 +48,16 @@ namespace Capa_Acceso_de_Datos
             {
                 throw ex;
             }
-            Desconectar();
+            Desconectarmy();
             return dt;
         }
         public void EjecutarProcedimientosalmacenados(String NombreSP, ref List<Parametros> lst)
         {
-            SqlCommand cmd;
+            MySqlCommand cmd;
             try
             {
-                Conectar();
-                cmd = new SqlCommand(NombreSP, conexion);
+                Conectarmy();
+                cmd = new MySqlCommand(NombreSP, ObtenerConexion);
                 cmd.CommandType = CommandType.StoredProcedure;
                 if (lst != null)
                 {
@@ -77,7 +80,7 @@ namespace Capa_Acceso_de_Datos
             {
                 throw ex;
             }
-            Desconectar();
+            Desconectarmy();
         }
     }
 }

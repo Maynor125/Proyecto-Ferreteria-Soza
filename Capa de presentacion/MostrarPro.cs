@@ -8,6 +8,7 @@ using System.Data;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
+using MySql.Data.MySqlClient;
 
 namespace Capa_de_presentacion
 {
@@ -31,7 +32,7 @@ namespace Capa_de_presentacion
 
 
         //Conexion a la base de datos en una capa.........
-        public SqlConnection Conex = new SqlConnection("Data Source=LAPTOP-RR455DM5\\SQLEXPRESS;Initial Catalog=Ferreteria;Integrated Security=True");
+        public MySqlConnection Conex = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=Madara125;");
         public void Conectar()
         {
             if (Conex.State == ConnectionState.Closed)
@@ -50,9 +51,9 @@ namespace Capa_de_presentacion
 
             Conectar();
             string transatSql = "Select Id_Articulo,Nombre,PrecioVenta,Marca,Imagen from Articulo";
-            SqlCommand C = new SqlCommand(transatSql, Conex);
+            MySqlCommand C = new MySqlCommand(transatSql, Conex);
             C.CommandType = CommandType.Text;
-            SqlDataReader Leer = C.ExecuteReader();
+            MySqlDataReader Leer = C.ExecuteReader();
 
             while (Leer.Read())
             {
@@ -67,7 +68,8 @@ namespace Capa_de_presentacion
                 Var.P_Nombre.Text = Nombre_Producto;
                 Var.P_Precio.Text = Convert.ToString(Precio_Venta+"$");
                 MemoryStream ms1 = new MemoryStream(Imagen);
-                Var.P_Imagen.Image = Image.FromStream(ms1);
+                Bitmap bm = new Bitmap(ms1);
+                Var.P_Imagen.Image = bm;
 
                 Contenedordeproduct.Controls.Add(Var);
 

@@ -35,6 +35,9 @@ namespace Capa_de_presentacion
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.ContenedorC = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -53,7 +56,6 @@ namespace Capa_de_presentacion
             this.bunifuImageButton3 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuToolTip1 = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.bunifuVScrollBar3 = new Bunifu.UI.WinForms.BunifuVScrollBar();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.bunifuSeparator4 = new Bunifu.UI.WinForms.BunifuSeparator();
@@ -62,10 +64,16 @@ namespace Capa_de_presentacion
             this.btnigual = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.btnmenos = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.btnmas = new Guna.UI2.WinForms.Guna2GradientCircleButton();
+            this.grid = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -519,7 +527,7 @@ namespace Capa_de_presentacion
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel3.Controls.Add(this.bunifuVScrollBar3);
+            this.panel3.Controls.Add(this.grid);
             this.panel3.Location = new System.Drawing.Point(861, 67);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(315, 342);
@@ -527,49 +535,6 @@ namespace Capa_de_presentacion
             this.bunifuToolTip1.SetToolTip(this.panel3, "");
             this.bunifuToolTip1.SetToolTipIcon(this.panel3, null);
             this.bunifuToolTip1.SetToolTipTitle(this.panel3, "");
-            // 
-            // bunifuVScrollBar3
-            // 
-            this.bunifuVScrollBar3.AllowCursorChanges = true;
-            this.bunifuVScrollBar3.AllowHomeEndKeysDetection = false;
-            this.bunifuVScrollBar3.AllowIncrementalClickMoves = true;
-            this.bunifuVScrollBar3.AllowMouseDownEffects = true;
-            this.bunifuVScrollBar3.AllowMouseHoverEffects = true;
-            this.bunifuVScrollBar3.AllowScrollingAnimations = true;
-            this.bunifuVScrollBar3.AllowScrollKeysDetection = true;
-            this.bunifuVScrollBar3.AllowScrollOptionsMenu = true;
-            this.bunifuVScrollBar3.AllowShrinkingOnFocusLost = false;
-            this.bunifuVScrollBar3.BackgroundColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuVScrollBar3.BackgroundImage")));
-            this.bunifuVScrollBar3.BindingContainer = null;
-            this.bunifuVScrollBar3.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar3.BorderRadius = 14;
-            this.bunifuVScrollBar3.BorderThickness = 1;
-            this.bunifuVScrollBar3.DurationBeforeShrink = 2000;
-            this.bunifuVScrollBar3.LargeChange = 10;
-            this.bunifuVScrollBar3.Location = new System.Drawing.Point(294, 24);
-            this.bunifuVScrollBar3.Maximum = 100;
-            this.bunifuVScrollBar3.Minimum = 0;
-            this.bunifuVScrollBar3.MinimumThumbLength = 18;
-            this.bunifuVScrollBar3.Name = "bunifuVScrollBar3";
-            this.bunifuVScrollBar3.OnDisable.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar3.OnDisable.ScrollBarColor = System.Drawing.Color.Transparent;
-            this.bunifuVScrollBar3.OnDisable.ThumbColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar3.ScrollBarBorderColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar3.ScrollBarColor = System.Drawing.Color.Silver;
-            this.bunifuVScrollBar3.ShrinkSizeLimit = 3;
-            this.bunifuVScrollBar3.Size = new System.Drawing.Size(17, 269);
-            this.bunifuVScrollBar3.SmallChange = 1;
-            this.bunifuVScrollBar3.TabIndex = 0;
-            this.bunifuVScrollBar3.ThumbColor = System.Drawing.Color.Gray;
-            this.bunifuVScrollBar3.ThumbLength = 26;
-            this.bunifuVScrollBar3.ThumbMargin = 1;
-            this.bunifuVScrollBar3.ThumbStyle = Bunifu.UI.WinForms.BunifuVScrollBar.ThumbStyles.Inset;
-            this.bunifuToolTip1.SetToolTip(this.bunifuVScrollBar3, "");
-            this.bunifuToolTip1.SetToolTipIcon(this.bunifuVScrollBar3, null);
-            this.bunifuToolTip1.SetToolTipTitle(this.bunifuVScrollBar3, "");
-            this.bunifuVScrollBar3.Value = 0;
-            this.bunifuVScrollBar3.Scroll += new System.EventHandler<Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs>(this.bunifuVScrollBar3_Scroll);
             // 
             // label2
             // 
@@ -588,11 +553,11 @@ namespace Capa_de_presentacion
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(1123, 412);
+            this.label3.Location = new System.Drawing.Point(1105, 412);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 21);
+            this.label3.Size = new System.Drawing.Size(63, 21);
             this.label3.TabIndex = 13;
-            this.label3.Text = "00.00";
+            this.label3.Text = "00.00 $";
             this.bunifuToolTip1.SetToolTip(this.label3, "");
             this.bunifuToolTip1.SetToolTipIcon(this.label3, null);
             this.bunifuToolTip1.SetToolTipTitle(this.label3, "");
@@ -733,6 +698,76 @@ namespace Capa_de_presentacion
             this.bunifuToolTip1.SetToolTipIcon(this.btnmas, ((System.Drawing.Image)(resources.GetObject("btnmas.ToolTipIcon"))));
             this.bunifuToolTip1.SetToolTipTitle(this.btnmas, "");
             // 
+            // grid
+            // 
+            this.grid.AllowUserToAddRows = false;
+            this.grid.AllowUserToDeleteRows = false;
+            this.grid.AllowUserToOrderColumns = true;
+            this.grid.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Linen;
+            this.grid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.grid.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.grid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(78)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(78)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.grid.ColumnHeadersHeight = 45;
+            this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.grid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(78)))), ((int)(((byte)(145)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.grid.DefaultCellStyle = dataGridViewCellStyle3;
+            this.grid.EnableHeadersVisualStyles = false;
+            this.grid.Location = new System.Drawing.Point(3, 0);
+            this.grid.Name = "grid";
+            this.grid.RowHeadersVisible = false;
+            this.grid.RowHeadersWidth = 38;
+            this.grid.RowTemplate.Height = 50;
+            this.grid.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.grid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.grid.Size = new System.Drawing.Size(310, 339);
+            this.grid.TabIndex = 2;
+            this.bunifuToolTip1.SetToolTip(this.grid, "");
+            this.bunifuToolTip1.SetToolTipIcon(this.grid, null);
+            this.bunifuToolTip1.SetToolTipTitle(this.grid, "");
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Articulo";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Precio";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Cant";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Monto";
+            this.Column4.Name = "Column4";
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -760,6 +795,7 @@ namespace Capa_de_presentacion
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -783,7 +819,6 @@ namespace Capa_de_presentacion
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton2;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton3;
         private System.Windows.Forms.Panel panel3;
-        private Bunifu.UI.WinForms.BunifuVScrollBar bunifuVScrollBar3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator4;
@@ -794,5 +829,10 @@ namespace Capa_de_presentacion
         private Guna.UI2.WinForms.Guna2GradientCircleButton btnmenos;
         private Guna.UI2.WinForms.Guna2GradientCircleButton btnmas;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton4;
+        private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

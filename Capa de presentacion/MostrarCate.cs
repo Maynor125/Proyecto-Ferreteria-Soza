@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
+using MySql.Data.MySqlClient;
 
 namespace Capa_de_presentacion
 {
@@ -15,7 +15,7 @@ namespace Capa_de_presentacion
     {
         public string Nombre { get; set; }
 
-        public SqlConnection Conex = new SqlConnection("Data Source=LAPTOP-RR455DM5\\SQLEXPRESS;Initial Catalog=Ferreteria;Integrated Security=True");
+        public MySqlConnection Conex = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=Madara125;");
         public void Conectar()
         {
             if (Conex.State == ConnectionState.Closed)
@@ -32,9 +32,9 @@ namespace Capa_de_presentacion
         {
             Conectar();
             string transatSql = "Select Descripcion from Categoria";
-            SqlCommand c = new SqlCommand(transatSql, Conex);
+            MySqlCommand c = new MySqlCommand(transatSql, Conex);
             c.CommandType = CommandType.Text;
-            SqlDataReader Leer = c.ExecuteReader();
+            MySqlDataReader Leer = c.ExecuteReader();
 
             while(Leer.Read())
             {

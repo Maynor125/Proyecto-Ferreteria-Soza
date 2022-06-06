@@ -45,23 +45,6 @@ namespace Capa_de_presentacion
         public Productos_I()
         {
             InitializeComponent();
-
-           /* for (int i = 0; i < 100; i++)
-            {
-                grid.Rows.Add(new object[]
-                    {
-                        imageList1.Images[0],
-                        Faker.NumberFaker.Number(),
-                        Faker.NameFaker.FirstName(),
-                        Faker.NameFaker.LastName(),
-                       Faker.NameFaker.MaleName(),
-                         Faker.DateTimeFaker.DateTime(),
-                       imageList2.Images[0],
-                        Faker.NumberFaker.Number()
-
-                    }
-                    );
-            }*/
         }
 
         public void Abrir_Form(object FormEstad)

@@ -56,11 +56,11 @@ namespace Capa_de_presentacion
             // P_Nombre
             // 
             this.P_Nombre.AutoSize = true;
-            this.P_Nombre.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.P_Nombre.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.P_Nombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(78)))), ((int)(((byte)(145)))));
-            this.P_Nombre.Location = new System.Drawing.Point(30, 3);
+            this.P_Nombre.Location = new System.Drawing.Point(18, 6);
             this.P_Nombre.Name = "P_Nombre";
-            this.P_Nombre.Size = new System.Drawing.Size(81, 22);
+            this.P_Nombre.Size = new System.Drawing.Size(73, 19);
             this.P_Nombre.TabIndex = 2;
             this.P_Nombre.Text = "Nombre ";
             // 

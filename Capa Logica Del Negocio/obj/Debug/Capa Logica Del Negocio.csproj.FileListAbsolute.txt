@@ -16,3 +16,16 @@ C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\De
 C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.csproj.CopyComplete
 C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.dll
 C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\obj\Debug\Capa Logica Del Negocio.pdb
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\MySql.Data.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\Google.Protobuf.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\ZstdNet.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\System.Memory.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\System.Buffers.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa Logica Del Negocio\bin\Debug\MySql.Data.xml

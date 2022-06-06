@@ -89,8 +89,9 @@ namespace Capa_de_presentacion
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             this.imageList1.Images.SetKeyName(0, "product_48px.png");
-            this.imageList1.Images.SetKeyName(1, "product_documents_64px.png");
-            this.imageList1.Images.SetKeyName(2, "todo_list_64px.png");
+            this.imageList1.Images.SetKeyName(1, "icons8-project-setup-48.png");
+            this.imageList1.Images.SetKeyName(2, "product_documents_64px.png");
+            this.imageList1.Images.SetKeyName(3, "todo_list_64px.png");
             // 
             // grid
             // 
@@ -128,7 +129,7 @@ namespace Capa_de_presentacion
             this.Column10,
             this.Column7});
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(232)))), ((int)(((byte)(198)))));
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro;
@@ -227,8 +228,10 @@ namespace Capa_de_presentacion
             // 
             this.imageList2.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList2.ImageStream")));
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList2.Images.SetKeyName(0, "ok_48px.png");
-            this.imageList2.Images.SetKeyName(1, "cancel_48px.png");
+            this.imageList2.Images.SetKeyName(0, "icons8-thick-arrow-pointing-up-24.png");
+            this.imageList2.Images.SetKeyName(1, "icons8-thick-arrow-pointing-down-24.png");
+            this.imageList2.Images.SetKeyName(2, "ok_48px.png");
+            this.imageList2.Images.SetKeyName(3, "cancel_48px.png");
             // 
             // pictureBox2
             // 
@@ -826,7 +829,7 @@ namespace Capa_de_presentacion
             this.bunifuElipse1.ElipseRadius = 15;
             this.bunifuElipse1.TargetControl = this.grid;
             // 
-            // Datos2
+            // Productos_I
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -841,7 +844,7 @@ namespace Capa_de_presentacion
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Datos2";
+            this.Name = "Productos_I";
             this.Text = "Datos2";
             this.Load += new System.EventHandler(this.Datos2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();

@@ -35,6 +35,7 @@ namespace Capa_de_presentacion
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NombreCategoria = new System.Windows.Forms.Label();
+            this.messaje = new Bunifu.UI.WinForms.BunifuToolTip(this.components);
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +62,11 @@ namespace Capa_de_presentacion
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(193, 42);
             this.bunifuPanel1.TabIndex = 0;
+            this.messaje.SetToolTip(this.bunifuPanel1, "");
+            this.messaje.SetToolTipIcon(this.bunifuPanel1, null);
+            this.messaje.SetToolTipTitle(this.bunifuPanel1, "");
+            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
+            this.bunifuPanel1.Leave += new System.EventHandler(this.bunifuPanel1_Leave);
             this.bunifuPanel1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuPanel1_MouseClick);
             // 
             // pictureBox1
@@ -72,6 +78,9 @@ namespace Capa_de_presentacion
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
+            this.messaje.SetToolTip(this.pictureBox1, "");
+            this.messaje.SetToolTipIcon(this.pictureBox1, null);
+            this.messaje.SetToolTipTitle(this.pictureBox1, "");
             // 
             // NombreCategoria
             // 
@@ -84,6 +93,44 @@ namespace Capa_de_presentacion
             this.NombreCategoria.Size = new System.Drawing.Size(76, 22);
             this.NombreCategoria.TabIndex = 14;
             this.NombreCategoria.Text = "Nombre";
+            this.messaje.SetToolTip(this.NombreCategoria, "");
+            this.messaje.SetToolTipIcon(this.NombreCategoria, null);
+            this.messaje.SetToolTipTitle(this.NombreCategoria, "");
+            // 
+            // messaje
+            // 
+            this.messaje.Active = true;
+            this.messaje.AlignTextWithTitle = false;
+            this.messaje.AllowAutoClose = false;
+            this.messaje.AllowFading = true;
+            this.messaje.AutoCloseDuration = 5000;
+            this.messaje.BackColor = System.Drawing.SystemColors.Control;
+            this.messaje.BorderColor = System.Drawing.Color.Gainsboro;
+            this.messaje.ClickToShowDisplayControl = false;
+            this.messaje.ConvertNewlinesToBreakTags = true;
+            this.messaje.DisplayControl = null;
+            this.messaje.EntryAnimationSpeed = 350;
+            this.messaje.ExitAnimationSpeed = 200;
+            this.messaje.GenerateAutoCloseDuration = false;
+            this.messaje.IconMargin = 6;
+            this.messaje.InitialDelay = 0;
+            this.messaje.Name = "messaje";
+            this.messaje.Opacity = 1D;
+            this.messaje.OverrideToolTipTitles = false;
+            this.messaje.Padding = new System.Windows.Forms.Padding(10);
+            this.messaje.ReshowDelay = 100;
+            this.messaje.ShowAlways = true;
+            this.messaje.ShowBorders = false;
+            this.messaje.ShowIcons = true;
+            this.messaje.ShowShadows = true;
+            this.messaje.Tag = null;
+            this.messaje.TextFont = new System.Drawing.Font("Segoe UI", 9F);
+            this.messaje.TextForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.messaje.TextMargin = 2;
+            this.messaje.TitleFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.messaje.TitleForeColor = System.Drawing.Color.Black;
+            this.messaje.ToolTipPosition = new System.Drawing.Point(0, 0);
+            this.messaje.ToolTipTitle = null;
             // 
             // CategoriaMostrar
             // 
@@ -93,6 +140,10 @@ namespace Capa_de_presentacion
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "CategoriaMostrar";
             this.Size = new System.Drawing.Size(193, 42);
+            this.messaje.SetToolTip(this, "");
+            this.messaje.SetToolTipIcon(this, null);
+            this.messaje.SetToolTipTitle(this, "");
+            this.MouseHover += new System.EventHandler(this.CategoriaMostrar_MouseHover);
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -105,5 +156,6 @@ namespace Capa_de_presentacion
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label NombreCategoria;
+        private Bunifu.UI.WinForms.BunifuToolTip messaje;
     }
 }

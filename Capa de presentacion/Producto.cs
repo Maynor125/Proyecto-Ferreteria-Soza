@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using System.Drawing;
 using Capa_Logica_Del_Negocio;
+using System.Drawing.Imaging;
 
 namespace Capa_de_presentacion
 {
@@ -25,7 +26,7 @@ namespace Capa_de_presentacion
       
         private void Producto_Load(object sender, EventArgs e)
         {
-            bunifuToolTip1.SetToolTip(pictureBox1, "Ingresar imagen de tipo JPG");
+            bunifuToolTip1.SetToolTip(pictureBox1, "Ingresar imagen de tipo PNG");
             bunifuToolTip1.SetToolTip(pictureBox2, "Cerrar Ventana");
         }
 
@@ -41,12 +42,7 @@ namespace Capa_de_presentacion
 
 
 
-        private byte[] Convertirimg()
-        {
-            System.IO.MemoryStream MS = new System.IO.MemoryStream();
-            pictureBox2.Image.Save(MS, System.Drawing.Imaging.ImageFormat.Png);
-            return MS.GetBuffer();
-        }
+      
 
         private void bunifuUserControl1_Click(object sender, EventArgs e)
         {
@@ -57,6 +53,9 @@ namespace Capa_de_presentacion
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            MemoryStream MS = new MemoryStream();
+            pictureBox1.Image.Save(MS, ImageFormat.Png);
+            byte[] Bytes = MS.ToArray();
             if (tbxcategoria.Text.Length != 0)
             {
                 if (tbxcategoria.Text.Length != 0)
@@ -101,13 +100,14 @@ namespace Capa_de_presentacion
                                     Variable.Cantidad = Convert.ToInt32(tbxcantidad.Text);
                                     Variable.Precio_Compra = Convert.ToDecimal(tbxpc.Text);
                                     Variable.Precio_Venta = Convert.ToDecimal(txbxpv.Text);
-                                    Variable.Imagen = Convertirimg();
+                                    Variable.Imagen = Bytes;
                                     Variable.RegistrarProductos();
 
                                     Productos_I D = new Productos_I();
                                    
                                     this.Visible = false;
                                     bunifuSnackbar1.Show(D, "Producto agregado exitosamente");
+                                    pictureBox1.Image = pictureBox1.Image;
                                     
                                 }
                                 else
@@ -148,12 +148,20 @@ namespace Capa_de_presentacion
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        { 
+            
+        }
+
+        private void btnelegirimg_Click(object sender, EventArgs e)
         {
-            OpenFileDialog of = new OpenFileDialog();
-            DialogResult Dr = of.ShowDialog();
-            if (Dr == DialogResult.OK)
+            OpenFileDialog ofdseleccionar = new OpenFileDialog();
+            ofdseleccionar.Filter = "Imagenes|*.jpg; *png";
+            ofdseleccionar.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyComputer);
+            ofdseleccionar.Title = "Seleccionar imagen";
+
+            if(ofdseleccionar.ShowDialog()==DialogResult.OK)
             {
-                pictureBox1.Image = Image.FromFile(of.FileName);
+                pictureBox1.Image = Image.FromFile(ofdseleccionar.FileName);
             }
         }
     }
