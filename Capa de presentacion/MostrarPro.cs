@@ -50,28 +50,40 @@ namespace Capa_de_presentacion
         {
 
             Conectar();
-            string transatSql = "Select Id_Articulo,Nombre,PrecioVenta,Marca,Imagen from Articulo";
+            string transatSql = "Select Id_Articulo,Nombre,PrecioVenta,Marca,Imagen,Cantidad from Articulo";
             MySqlCommand C = new MySqlCommand(transatSql, Conex);
             C.CommandType = CommandType.Text;
             MySqlDataReader Leer = C.ExecuteReader();
 
             while (Leer.Read())
             {
-               // Id_Producto = Convert.ToInt32(Leer[0]);
+                Productos_mostrar Var = new Productos_mostrar();
+                // Id_Producto = Convert.ToInt32(Leer[0]);
                 Nombre_Producto = Leer[1].ToString();
                 Precio_Venta = Convert.ToDecimal(Leer[2]);
                 Marca = Leer[3].ToString();
                 Imagen = ((byte[])Leer[4]);
+                Cantidad = Convert.ToInt32(Leer[5]);
+                if(Cantidad<5)
+                {
+                    Var.bunifuPanel2.BackgroundColor = Color.Red;
+                }
+                if(Cantidad>9)
+                {
+                    Var.LabelCantidad.Location = new Point(3,5);
+                }
 
-                Productos_mostrar Var = new Productos_mostrar();
+              
                // Var.P_ID.Text = Convert.ToString( Id_Producto);
                 Var.P_Nombre.Text = Nombre_Producto;
                 Var.P_Precio.Text = Convert.ToString(Precio_Venta+"$");
+                Var.LabelCantidad.Text = Convert.ToString(Cantidad);
                 MemoryStream ms1 = new MemoryStream(Imagen);
                 Bitmap bm = new Bitmap(ms1);
                 Var.P_Imagen.Image = bm;
 
                 Contenedordeproduct.Controls.Add(Var);
+
 
             }
             Desconectar();

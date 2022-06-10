@@ -21,6 +21,7 @@ namespace Capa_de_presentacion
           
             InitializeComponent();
             LLenarControl();
+         
         }
 
         private void LLenarControl()
@@ -38,6 +39,7 @@ namespace Capa_de_presentacion
             bunifuToolTip1.SetToolTip(btnmas, "sumar uno");
             bunifuToolTip1.SetToolTip(btnmenos, "restar uno");
             bunifuToolTip1.SetToolTip(btnigual, "Cancelar venta");
+           // Bunifu.Utils.ScrollbarBinder.BindPanel(Contenedordeproductos, bunifuVScrollBar2);
         }
 
         private void bunifuVScrollBar3_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
@@ -58,6 +60,11 @@ namespace Capa_de_presentacion
         private void Contenedordeproductos_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void bunifuVScrollBar2_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
+        {
+            
         }
     }
 }

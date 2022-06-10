@@ -211,3 +211,6 @@ C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\bin\Debug
 C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\bin\Debug\MySql.Data.xml
 C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\obj\Debug\Capa de presentacion.exe.config
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\obj\Debug\Capa_de_presentacion.InicioA.resources
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\obj\Debug\Capa_de_presentacion.Clientes.resources
+C:\Users\maynor\OneDrive\Escritorio\Sistema - 2.0\Capa de presentacion\obj\Debug\Capa_de_presentacion.Proveedores.resources

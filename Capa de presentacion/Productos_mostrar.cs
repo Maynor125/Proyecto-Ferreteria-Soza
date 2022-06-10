@@ -31,5 +31,9 @@ namespace Capa_de_presentacion
         {
 
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

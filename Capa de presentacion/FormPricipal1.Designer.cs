@@ -30,50 +30,61 @@ namespace Capa_de_presentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPricipal1));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuElipse8 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.PanelContenedor = new Bunifu.UI.WinForms.BunifuPanel();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.btnopciones1 = new FontAwesome.Sharp.IconButton();
             this.btnopciones2 = new FontAwesome.Sharp.IconButton();
             this.iconButton22 = new FontAwesome.Sharp.IconButton();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.btnreporte3 = new FontAwesome.Sharp.IconButton();
             this.btnreporte1 = new FontAwesome.Sharp.IconButton();
             this.btnreporte2 = new FontAwesome.Sharp.IconButton();
             this.iconButton17 = new FontAwesome.Sharp.IconButton();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.btnal1 = new FontAwesome.Sharp.IconButton();
             this.btnal2 = new FontAwesome.Sharp.IconButton();
             this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.btnusuario1 = new FontAwesome.Sharp.IconButton();
             this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.btncompras1 = new FontAwesome.Sharp.IconButton();
             this.btncompras2 = new FontAwesome.Sharp.IconButton();
             this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.btnventas2 = new FontAwesome.Sharp.IconButton();
             this.btnventas1 = new FontAwesome.Sharp.IconButton();
             this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnalmacen2 = new FontAwesome.Sharp.IconButton();
             this.btnalmacen1 = new FontAwesome.Sharp.IconButton();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.guna2GradientCircleButton3 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.guna2GradientCircleButton2 = new Guna.UI2.WinForms.Guna2GradientCircleButton();
@@ -85,29 +96,20 @@ namespace Capa_de_presentacion
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse4 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse5 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse6 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse7 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse8 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.PanelContenedor = new Bunifu.UI.WinForms.BunifuPanel();
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
@@ -137,11 +139,221 @@ namespace Capa_de_presentacion
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel9);
+            this.guna2Transition1.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(3, 65);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(217, 616);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(59)))), ((int)(((byte)(120)))));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(49, 579);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 19);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Administrador";
+            // 
+            // panel8
+            // 
+            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(82)))), ((int)(((byte)(112)))));
+            this.panel8.Controls.Add(this.btnopciones1);
+            this.panel8.Controls.Add(this.btnopciones2);
+            this.panel8.Controls.Add(this.iconButton22);
+            this.panel8.Location = new System.Drawing.Point(13, 474);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(186, 50);
+            this.panel8.TabIndex = 9;
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(82)))), ((int)(((byte)(112)))));
+            this.panel7.Controls.Add(this.btnreporte3);
+            this.panel7.Controls.Add(this.btnreporte1);
+            this.panel7.Controls.Add(this.btnreporte2);
+            this.panel7.Controls.Add(this.iconButton17);
+            this.panel7.Location = new System.Drawing.Point(13, 424);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(186, 44);
+            this.panel7.TabIndex = 8;
+            // 
+            // panel6
+            // 
+            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
+            this.panel6.Controls.Add(this.btnal1);
+            this.panel6.Controls.Add(this.btnal2);
+            this.panel6.Controls.Add(this.iconButton14);
+            this.panel6.Location = new System.Drawing.Point(15, 363);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(182, 55);
+            this.panel6.TabIndex = 7;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(94, 535);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(48, 18);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Ayuda";
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
+            this.panel5.Controls.Add(this.btnusuario1);
+            this.panel5.Controls.Add(this.iconButton12);
+            this.panel5.Location = new System.Drawing.Point(13, 307);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(186, 46);
+            this.panel5.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
+            this.panel4.Controls.Add(this.btncompras1);
+            this.panel4.Controls.Add(this.btncompras2);
+            this.panel4.Controls.Add(this.iconButton10);
+            this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel4.Location = new System.Drawing.Point(12, 192);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(187, 109);
+            this.panel4.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
+            this.panel3.Controls.Add(this.btnventas2);
+            this.panel3.Controls.Add(this.btnventas1);
+            this.panel3.Controls.Add(this.iconButton8);
+            this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.panel3.Location = new System.Drawing.Point(13, 144);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(186, 42);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
+            this.panel2.Controls.Add(this.btnalmacen2);
+            this.panel2.Controls.Add(this.btnalmacen1);
+            this.panel2.Controls.Add(this.iconButton1);
+            this.panel2.Location = new System.Drawing.Point(12, 90);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(190, 48);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.label3);
+            this.panel9.Controls.Add(this.label4);
+            this.panel9.Controls.Add(this.pictureBox1);
+            this.panel9.Location = new System.Drawing.Point(3, 4);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(214, 81);
+            this.panel9.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(26, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 30);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Ferreteria";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(45, 40);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 30);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Soza";
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.bunifuGradientPanel1;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 20;
+            this.bunifuElipse1.TargetControl = this.panel1;
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 7;
+            this.bunifuElipse2.TargetControl = this.panel2;
+            // 
+            // bunifuElipse3
+            // 
+            this.bunifuElipse3.ElipseRadius = 7;
+            this.bunifuElipse3.TargetControl = this.panel3;
+            // 
+            // bunifuElipse4
+            // 
+            this.bunifuElipse4.ElipseRadius = 7;
+            this.bunifuElipse4.TargetControl = this.panel4;
+            // 
+            // bunifuElipse5
+            // 
+            this.bunifuElipse5.ElipseRadius = 7;
+            this.bunifuElipse5.TargetControl = this.panel5;
+            // 
+            // bunifuElipse6
+            // 
+            this.bunifuElipse6.ElipseRadius = 7;
+            this.bunifuElipse6.TargetControl = this.panel6;
+            // 
+            // bunifuElipse7
+            // 
+            this.bunifuElipse7.ElipseRadius = 7;
+            this.bunifuElipse7.TargetControl = this.panel7;
+            // 
+            // bunifuElipse8
+            // 
+            this.bunifuElipse8.ElipseRadius = 7;
+            this.bunifuElipse8.TargetControl = this.panel8;
+            // 
+            // PanelContenedor
+            // 
+            this.PanelContenedor.BackgroundColor = System.Drawing.Color.White;
+            this.PanelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelContenedor.BackgroundImage")));
+            this.PanelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelContenedor.BorderColor = System.Drawing.Color.Transparent;
+            this.PanelContenedor.BorderRadius = 20;
+            this.PanelContenedor.BorderThickness = 1;
+            this.PanelContenedor.Location = new System.Drawing.Point(3, 65);
+            this.PanelContenedor.Name = "PanelContenedor";
+            this.PanelContenedor.ShowBorders = true;
+            this.PanelContenedor.Size = new System.Drawing.Size(1171, 616);
+            this.PanelContenedor.TabIndex = 4;
+            this.PanelContenedor.Click += new System.EventHandler(this.PanelContenedor_Click_1);
             // 
             // bunifuImageButton1
             // 
@@ -153,6 +365,7 @@ namespace Capa_de_presentacion
             this.bunifuImageButton1.AllowZoomingOnFocus = false;
             this.bunifuImageButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(59)))), ((int)(((byte)(120)))));
             this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Transition1.SetDecoration(this.bunifuImageButton1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.bunifuImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuImageButton1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ErrorImage")));
             this.bunifuImageButton1.FadeWhenInactive = false;
@@ -194,18 +407,6 @@ namespace Capa_de_presentacion
             this.bunifuPictureBox2.TabIndex = 0;
             this.bunifuPictureBox2.TabStop = false;
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(59)))), ((int)(((byte)(120)))));
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(49, 579);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 19);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Administrador";
             // 
             // bunifuPictureBox1
             // 
@@ -250,19 +451,6 @@ namespace Capa_de_presentacion
             this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
             this.bunifuSeparator1.Size = new System.Drawing.Size(190, 10);
             this.bunifuSeparator1.TabIndex = 3;
-            // 
-            // panel8
-            // 
-            this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(82)))), ((int)(((byte)(112)))));
-            this.panel8.Controls.Add(this.btnopciones1);
-            this.panel8.Controls.Add(this.btnopciones2);
-            this.panel8.Controls.Add(this.iconButton22);
-            this.panel8.Location = new System.Drawing.Point(13, 474);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(186, 50);
-            this.panel8.TabIndex = 9;
             // 
             // btnopciones1
             // 
@@ -334,20 +522,6 @@ namespace Capa_de_presentacion
             this.iconButton22.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton22.UseVisualStyleBackColor = false;
             this.iconButton22.Click += new System.EventHandler(this.iconButton22_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(82)))), ((int)(((byte)(112)))));
-            this.panel7.Controls.Add(this.btnreporte3);
-            this.panel7.Controls.Add(this.btnreporte1);
-            this.panel7.Controls.Add(this.btnreporte2);
-            this.panel7.Controls.Add(this.iconButton17);
-            this.panel7.Location = new System.Drawing.Point(13, 424);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(186, 44);
-            this.panel7.TabIndex = 8;
             // 
             // btnreporte3
             // 
@@ -439,19 +613,6 @@ namespace Capa_de_presentacion
             this.iconButton17.UseVisualStyleBackColor = false;
             this.iconButton17.Click += new System.EventHandler(this.iconButton17_Click);
             // 
-            // panel6
-            // 
-            this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
-            this.panel6.Controls.Add(this.btnal1);
-            this.panel6.Controls.Add(this.btnal2);
-            this.panel6.Controls.Add(this.iconButton14);
-            this.panel6.Location = new System.Drawing.Point(15, 363);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(182, 55);
-            this.panel6.TabIndex = 7;
-            // 
             // btnal1
             // 
             this.btnal1.BackColor = System.Drawing.Color.Transparent;
@@ -521,17 +682,6 @@ namespace Capa_de_presentacion
             this.iconButton14.UseVisualStyleBackColor = false;
             this.iconButton14.Click += new System.EventHandler(this.iconButton14_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(94, 535);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 18);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Ayuda";
-            // 
             // iconPictureBox4
             // 
             this.iconPictureBox4.BackColor = System.Drawing.Color.Transparent;
@@ -544,18 +694,6 @@ namespace Capa_de_presentacion
             this.iconPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.iconPictureBox4.TabIndex = 5;
             this.iconPictureBox4.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
-            this.panel5.Controls.Add(this.btnusuario1);
-            this.panel5.Controls.Add(this.iconButton12);
-            this.panel5.Location = new System.Drawing.Point(13, 307);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(186, 46);
-            this.panel5.TabIndex = 4;
             // 
             // btnusuario1
             // 
@@ -602,19 +740,6 @@ namespace Capa_de_presentacion
             this.iconButton12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton12.UseVisualStyleBackColor = false;
             this.iconButton12.Click += new System.EventHandler(this.iconButton12_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
-            this.panel4.Controls.Add(this.btncompras1);
-            this.panel4.Controls.Add(this.btncompras2);
-            this.panel4.Controls.Add(this.iconButton10);
-            this.panel4.Location = new System.Drawing.Point(13, 253);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(187, 48);
-            this.panel4.TabIndex = 3;
             // 
             // btncompras1
             // 
@@ -685,19 +810,6 @@ namespace Capa_de_presentacion
             this.iconButton10.UseVisualStyleBackColor = false;
             this.iconButton10.Click += new System.EventHandler(this.iconButton10_Click);
             // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
-            this.panel3.Controls.Add(this.btnventas2);
-            this.panel3.Controls.Add(this.btnventas1);
-            this.panel3.Controls.Add(this.iconButton8);
-            this.panel3.Location = new System.Drawing.Point(13, 199);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(186, 48);
-            this.panel3.TabIndex = 2;
-            // 
             // btnventas2
             // 
             this.btnventas2.BackColor = System.Drawing.Color.Transparent;
@@ -766,17 +878,6 @@ namespace Capa_de_presentacion
             this.iconButton8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton8.UseVisualStyleBackColor = false;
             this.iconButton8.Click += new System.EventHandler(this.iconButton8_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(99)))), ((int)(((byte)(157)))));
-            this.panel2.Controls.Add(this.btnalmacen2);
-            this.panel2.Controls.Add(this.btnalmacen1);
-            this.panel2.Controls.Add(this.iconButton1);
-            this.panel2.Location = new System.Drawing.Point(12, 90);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 48);
-            this.panel2.TabIndex = 1;
             // 
             // btnalmacen2
             // 
@@ -847,39 +948,6 @@ namespace Capa_de_presentacion
             this.iconButton1.UseVisualStyleBackColor = false;
             this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.label3);
-            this.panel9.Controls.Add(this.label4);
-            this.panel9.Controls.Add(this.pictureBox1);
-            this.panel9.Location = new System.Drawing.Point(3, 4);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(214, 81);
-            this.panel9.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(26, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 30);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Ferreteria";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(45, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 30);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Soza";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Capa_de_presentacion.Properties.Resources._4137161_building_construction_industry_setting_114090;
@@ -889,13 +957,6 @@ namespace Capa_de_presentacion
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.bunifuGradientPanel1;
-            this.bunifuDragControl1.Vertical = true;
             // 
             // bunifuGradientPanel1
             // 
@@ -1069,69 +1130,36 @@ namespace Capa_de_presentacion
             this.iconPictureBox1.TabStop = false;
             this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
-            // bunifuElipse1
+            // guna2Transition1
             // 
-            this.bunifuElipse1.ElipseRadius = 20;
-            this.bunifuElipse1.TargetControl = this.panel1;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 7;
-            this.bunifuElipse2.TargetControl = this.panel2;
-            // 
-            // bunifuElipse3
-            // 
-            this.bunifuElipse3.ElipseRadius = 7;
-            this.bunifuElipse3.TargetControl = this.panel3;
-            // 
-            // bunifuElipse4
-            // 
-            this.bunifuElipse4.ElipseRadius = 7;
-            this.bunifuElipse4.TargetControl = this.panel4;
-            // 
-            // bunifuElipse5
-            // 
-            this.bunifuElipse5.ElipseRadius = 7;
-            this.bunifuElipse5.TargetControl = this.panel5;
-            // 
-            // bunifuElipse6
-            // 
-            this.bunifuElipse6.ElipseRadius = 7;
-            this.bunifuElipse6.TargetControl = this.panel6;
-            // 
-            // bunifuElipse7
-            // 
-            this.bunifuElipse7.ElipseRadius = 7;
-            this.bunifuElipse7.TargetControl = this.panel7;
-            // 
-            // bunifuElipse8
-            // 
-            this.bunifuElipse8.ElipseRadius = 7;
-            this.bunifuElipse8.TargetControl = this.panel8;
-            // 
-            // PanelContenedor
-            // 
-            this.PanelContenedor.BackgroundColor = System.Drawing.Color.White;
-            this.PanelContenedor.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelContenedor.BackgroundImage")));
-            this.PanelContenedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PanelContenedor.BorderColor = System.Drawing.Color.Transparent;
-            this.PanelContenedor.BorderRadius = 20;
-            this.PanelContenedor.BorderThickness = 1;
-            this.PanelContenedor.Location = new System.Drawing.Point(224, 65);
-            this.PanelContenedor.Name = "PanelContenedor";
-            this.PanelContenedor.ShowBorders = true;
-            this.PanelContenedor.Size = new System.Drawing.Size(950, 616);
-            this.PanelContenedor.TabIndex = 4;
-            this.PanelContenedor.Click += new System.EventHandler(this.PanelContenedor_Click_1);
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Leaf;
+            this.guna2Transition1.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 1F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation3;
             // 
             // FormPricipal1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1180, 684);
-            this.Controls.Add(this.PanelContenedor);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bunifuGradientPanel1);
+            this.Controls.Add(this.PanelContenedor);
+            this.guna2Transition1.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormPricipal1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -1139,19 +1167,19 @@ namespace Capa_de_presentacion
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
@@ -1231,6 +1259,7 @@ namespace Capa_de_presentacion
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton2;
         private Guna.UI2.WinForms.Guna2GradientCircleButton guna2GradientCircleButton1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
     }
 }
 

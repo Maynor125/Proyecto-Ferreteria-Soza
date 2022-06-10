@@ -21,13 +21,24 @@ namespace Capa_de_presentacion
             InitializeComponent();
         }
         Articulos Variable = new Articulos();
-
-
+        Categoria Variable1 = new Categoria();
+        UnidadMedida Variable2 = new UnidadMedida();
+        Productos_I Variable3 = new Productos_I();
       
         private void Producto_Load(object sender, EventArgs e)
         {
             bunifuToolTip1.SetToolTip(pictureBox1, "Ingresar imagen de tipo PNG");
             bunifuToolTip1.SetToolTip(pictureBox2, "Cerrar Ventana");
+            cbxCategoria.DataSource = Variable1.Listar_Categoria();
+            cbxCategoria.ValueMember = "Id_Categoria";
+            cbxCategoria.DisplayMember = "Descripcion";
+            cbxCategoria.SelectedIndex = -1;
+
+
+            cbxUnidad.DataSource = Variable2.Listar_Unidad();
+            cbxUnidad.ValueMember = "Id_Unidad";
+            cbxUnidad.DisplayMember = "Nombre";
+            cbxUnidad.SelectedIndex = -1;
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -56,11 +67,11 @@ namespace Capa_de_presentacion
             MemoryStream MS = new MemoryStream();
             pictureBox1.Image.Save(MS, ImageFormat.Png);
             byte[] Bytes = MS.ToArray();
-            if (tbxcategoria.Text.Length != 0)
+            if (cbxCategoria.Text.Length != 0)
             {
-                if (tbxcategoria.Text.Length != 0)
+                if (cbxCategoria.Text.Length != 0)
                 {
-                    errorProvider1.SetError(tbxcategoria, "");
+                    errorProvider1.SetError(cbxCategoria, "");
                 }
                 if (txbproducto.Text.Length != 0)
                 {
@@ -68,11 +79,11 @@ namespace Capa_de_presentacion
                     {
                         errorProvider1.SetError(txbproducto, "");
                     }
-                    if (txbxmedida.Text.Length != 0)
+                    if (cbxUnidad.Text.Length != 0)
                     {
-                        if (txbxmedida.Text.Length != 0)
+                        if (cbxUnidad.Text.Length != 0)
                         {
-                            errorProvider1.SetError(txbxmedida, "");
+                            errorProvider1.SetError(cbxUnidad, "");
                         }
                         if (tbxcantidad.Text.Length!=0)
                         {
@@ -93,10 +104,10 @@ namespace Capa_de_presentacion
                                         errorProvider1.SetError(txbxpv, "");
                                     }
 
-                                    Variable.Categoria = Convert.ToInt32(tbxcategoria.Text);
+                                    Variable.Categoria = Convert.ToInt32(cbxCategoria.SelectedValue.ToString());
                                     Variable.Nombre_Producto = txbproducto.Text;
                                     Variable.Marca = txbxmarca.Text;
-                                    Variable.Tipo = Convert.ToInt32(txbxmedida.Text);
+                                    Variable.Tipo = Convert.ToInt32(cbxUnidad.SelectedValue.ToString());
                                     Variable.Cantidad = Convert.ToInt32(tbxcantidad.Text);
                                     Variable.Precio_Compra = Convert.ToDecimal(tbxpc.Text);
                                     Variable.Precio_Venta = Convert.ToDecimal(txbxpv.Text);
@@ -107,7 +118,7 @@ namespace Capa_de_presentacion
                                    
                                     this.Visible = false;
                                     bunifuSnackbar1.Show(D, "Producto agregado exitosamente");
-                                    pictureBox1.Image = pictureBox1.Image;
+                                    Variable3.CargarListado();
                                     
                                 }
                                 else
@@ -130,7 +141,7 @@ namespace Capa_de_presentacion
                     }
                     else
                     {
-                        errorProvider1.SetError(txbxmedida, "No se Haceptan valores vacios");
+                        errorProvider1.SetError(cbxUnidad, "No se Haceptan valores vacios");
                     }
 
                 }
@@ -141,7 +152,7 @@ namespace Capa_de_presentacion
             }
             else
             {
-                errorProvider1.SetError(tbxcategoria, "No se Haceptan valores vacios");
+                errorProvider1.SetError(cbxCategoria, "No se Haceptan valores vacios");
             } 
            
            

@@ -398,6 +398,7 @@ namespace Capa_de_presentacion
             this.bunifuImageButton3.WaitOnLoad = false;
             this.bunifuImageButton3.Zoom = 15;
             this.bunifuImageButton3.ZoomSpeed = 10;
+            this.bunifuImageButton3.Click += new System.EventHandler(this.bunifuImageButton3_Click);
             // 
             // bunifuImageButton2
             // 
@@ -435,6 +436,7 @@ namespace Capa_de_presentacion
             this.bunifuImageButton2.WaitOnLoad = false;
             this.bunifuImageButton2.Zoom = 15;
             this.bunifuImageButton2.ZoomSpeed = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // bunifuImageButton1
             // 

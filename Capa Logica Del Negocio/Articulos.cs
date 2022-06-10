@@ -55,7 +55,45 @@ namespace Capa_Logica_Del_Negocio
                 throw ex;
             }
         }
-        
+        public void AtualizarProductos()
+        {
+
+            List<Parametros> lst = new List<Parametros>();
+
+            try
+            {
+                lst.Add(new Parametros("@Id_Articulo", Id_Producto));
+                lst.Add(new Parametros("@Id_Categoria", Categoria));
+                lst.Add(new Parametros("@Nombre", Nombre_Producto));
+                lst.Add(new Parametros("@Marca", Marca));
+                lst.Add(new Parametros("@Unidad", Tipo));
+                lst.Add(new Parametros("@Cantidad", Cantidad));
+                lst.Add(new Parametros("@PrecioCompra", Precio_Compra));
+                lst.Add(new Parametros("@PrecioVenta", Precio_Venta));
+                lst.Add(new Parametros("@Imagen", Imagen));
+                CD.EjecutarProcedimientosalmacenados("ActualizarArticulo", ref lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+       public void EliminarArticulos()
+        {
+
+            List<Parametros> lst = new List<Parametros>();
+
+            try
+            {
+                lst.Add(new Parametros("@Id_Articulo", Id_Producto));
+                CD.EjecutarProcedimientosalmacenados("EliminarArticulo", ref lst);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
 
     }
 }

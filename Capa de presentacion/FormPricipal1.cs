@@ -21,6 +21,9 @@ namespace Capa_de_presentacion
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Abrir_Form(new InicioA());
+            panel1.Location = new Point(3, 65);
+            panel1.Visible = false;
             toolTip1.SetToolTip(pictureBox1, "inactivar botones");
             toolTip1.SetToolTip(iconPictureBox1, "Cerrar");
             toolTip1.SetToolTip(iconPictureBox2, "Maximizar");
@@ -642,16 +645,19 @@ namespace Capa_de_presentacion
         private void btncompras2_Click(object sender, EventArgs e)
         {
             activarbtn(sender, Color.FromArgb(227, 239, 241));
+            Abrir_Form(new Proveedores());
         }
 
         private void btnventas1_Click(object sender, EventArgs e)
         {
+            Abrir_Form(new Ventas());
             activarbtn(sender, Color.FromArgb(227, 239, 241));
         }
 
         private void btnventas2_Click(object sender, EventArgs e)
         {
             activarbtn(sender, Color.FromArgb(227, 239, 241));
+            Abrir_Form(new Clientes());
         }
 
         private void btnalmacen1_Click(object sender, EventArgs e)
@@ -666,7 +672,15 @@ namespace Capa_de_presentacion
 
         private void iconomenu_Click(object sender, EventArgs e)
         {
-
+            if(panel1.Visible==false)
+            {
+                guna2Transition1.Show(panel1);
+                panel1.BringToFront();
+            }
+            else if (panel1.Visible==true)
+            {
+                panel1.Visible =false;
+            }
         }
 
         private void guna2GradientCircleButton1_MouseHover(object sender, EventArgs e)
@@ -688,7 +702,7 @@ namespace Capa_de_presentacion
 
         private void guna2GradientCircleButton1_MouseLeave(object sender, EventArgs e)
         {
-            guna2GradientCircleButton1.Image = Image.FromFile("ninguno");
+            
         }
     }
 }

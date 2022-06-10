@@ -60,7 +60,7 @@ namespace Capa_de_presentacion
             this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(193, 42);
+            this.bunifuPanel1.Size = new System.Drawing.Size(197, 42);
             this.bunifuPanel1.TabIndex = 0;
             this.messaje.SetToolTip(this.bunifuPanel1, "");
             this.messaje.SetToolTipIcon(this.bunifuPanel1, null);
@@ -139,7 +139,7 @@ namespace Capa_de_presentacion
             this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "CategoriaMostrar";
-            this.Size = new System.Drawing.Size(193, 42);
+            this.Size = new System.Drawing.Size(197, 42);
             this.messaje.SetToolTip(this, "");
             this.messaje.SetToolTipIcon(this, null);
             this.messaje.SetToolTipTitle(this, "");

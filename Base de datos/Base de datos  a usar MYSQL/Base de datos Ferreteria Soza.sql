@@ -58,6 +58,7 @@ Direccion Varchar(100) Not Null,
 Primary Key(ID_Empleado)
 )engine=innoDB;
 drop table  Empleado;
+
 /*Creacion de la tabla Clientes.*/
 Create Table Cliente
 (Id_Cliente Int auto_increment ,
@@ -81,6 +82,7 @@ FechaVenta Date Not Null,
 Total Decimal(6,2) Not Null,
 Primary Key (Id_Venta)
 )engine=innoDB;
+
 
 /*Creacion de la tabla Detalle de las ventas.*/
 Create Table DetalleVenta
@@ -167,6 +169,10 @@ Create Procedure ListarCategoria
 ()	
 Select * from Categoria;
 
+Create Procedure ListarUnidad
+()	
+Select * from unidad_medida;
+
 call ListarCategoria;
 drop procedure ListarProductos;
 
@@ -202,3 +208,52 @@ Imagen blob
 Insert Articulo(Id_Categoria,Nombre,Marca,Id_Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen)
  Values(Id_Categoria,Nombre,Marca,Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen);
 
+Create Procedure ActualizarArticulo
+(
+Id_Articulo int,
+Id_Categoria Int,
+Nombre Varchar(50),
+Marca Varchar(50),
+Unidad int,
+Cantidad Int,
+PrecioCompra Decimal(6,2),
+PrecioVenta Decimal(6,2),
+Imagen blob
+)
+update articulo set Id_Categoria=Id_Categoria ,Nombre=Nombre,Marca=Marca,Id_Unidad=Unidad,Cantidad=Cantidad,
+PrecioCompra=PrecioCompra,PrecioVenta=PrecioVenta,Imagen=Imagen
+where Id_Articulo=Id_Articulo;
+
+create procedure EliminarArticulo
+(
+Id_Articulo int
+)
+delete from articulo where Id_Articulo like Id_Articulo;
+drop procedure EliminarArticulo;
+select*from articulo;
+
+create procedure IngresarVenta
+(
+ Id_Empleado int,
+ Id_C int,
+ Fecha date,
+ Total Decimal(6,2)
+)
+insert venta(Id_Empleado,Id_Cliente,FechaVenta,Total) 
+values (Id_V,Id_Empleado,Id_C,Fecha,Total);
+
+create procedure IngresarDetalleVenta
+(
+ Id_A int,
+ Id_V int,
+ cantidad int,
+ Ivg Decimal(6,2),
+ SubTotal Decimal(6,2),
+ Stock Int
+)
+set Stock=(Select Cantidad From articulo Where Id_Articulo=Id_A);
+insert DetalleVenta(Id_Producto,Id_Venta,Cantidad,Igv,SubTotal) 
+values (Id_A,Id_V,cantidad,Ivg,SubTotal);
+update Articulo set Cantidad=Stock-cantidad where Id_Articulo=Id_A;
+
+drop procedure IngresarDetalleVenta

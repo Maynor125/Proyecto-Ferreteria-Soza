@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,13 +12,19 @@ using Capa_Logica_Del_Negocio;
 
 namespace Capa_de_presentacion
 {
+ 
     public partial class Productos_I : Form
     {
         Articulos V = new Articulos();
+        Producto P = new Producto();
+        public byte[] imagen;
         public void CargarListado()
         {
             DataTable dt = new DataTable();
+          
             dt = V.Listar_Articulos();
+            MemoryStream ms1 = new MemoryStream(imagen);
+            Bitmap bm = new Bitmap(ms1);
             try
             {
                 grid.Rows.Clear();
@@ -34,6 +41,7 @@ namespace Capa_de_presentacion
                     grid.Rows[i].Cells[8].Value = dt.Rows[i][6].ToString();
                     grid.Rows[i].Cells[9].Value=(imageList2.Images[0]);
                     grid.Rows[i].Cells[10].Value = dt.Rows[i][7].ToString();
+   
                 }
             }
             catch (Exception ex)
@@ -187,9 +195,51 @@ namespace Capa_de_presentacion
         {
             Producto a = new Producto();
             a.Show();
-           // Abrir_Form(new Producto());
-           // Datos2 yo = new Datos2();
-            //bunifuSnackbar1.Show(yo, "Aun no hay funcion para agregar");
+
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            if (grid.SelectedRows.Count > 0)
+            {
+               
+                P.Show();
+                P.cbxCategoria.Text = Convert.ToString( grid.CurrentRow.Cells[2].Value.ToString());
+                P.txbproducto.Text = grid.CurrentRow.Cells[3].Value.ToString();
+                P.txbxmarca.Text = grid.CurrentRow.Cells[4].Value.ToString();
+                P.cbxUnidad.Text = grid.CurrentRow.Cells[5].Value.ToString();
+                P.tbxcantidad.Text = grid.CurrentRow.Cells[6].Value.ToString();
+                P.tbxpc.Text = grid.CurrentRow.Cells[8].Value.ToString();
+                P.txbxpv.Text = grid.CurrentRow.Cells[10].Value.ToString();
+            }
+
+            else
+            {
+                MessageBox.Show("Debe Seleccionar la Fila a Editar.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            string id_Prod;
+            if (grid.SelectedRows.Count > 0)
+            {
+                DialogResult ORe;
+                ORe = MessageBox.Show("Al eliminar este Articulos podria afectar otros datos\n\t\tEliminar aun asi", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (ORe == DialogResult.OK)
+                {
+                    id_Prod = (grid.CurrentRow.Cells[1].Value.ToString());
+                    V.Id_Producto = Convert.ToInt32(id_Prod);
+                    V.EliminarArticulos();
+                    MessageBox.Show("Eliminado correctamente");
+                    CargarListado();
+
+                }
+                else MessageBox.Show("Eliminacion cancelada");
+
+            }
+            else
+                MessageBox.Show("No se pudo eliminar, por baboso");
         }
     }
 }
