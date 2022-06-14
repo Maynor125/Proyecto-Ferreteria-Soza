@@ -15,7 +15,7 @@ namespace Capa_de_presentacion
     {
         public string Nombre { get; set; }
 
-        public MySqlConnection Conex = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=Madara125;");
+        public MySqlConnection Conex = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=kagasagua;");
         public void Conectar()
         {
             if (Conex.State == ConnectionState.Closed)

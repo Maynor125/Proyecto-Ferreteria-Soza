@@ -85,7 +85,7 @@ namespace Capa_Logica_Del_Negocio
 
             try
             {
-                lst.Add(new Parametros("@Id_Articulo", Id_Producto));
+                lst.Add(new Parametros("@Id_A", Id_Producto));
                 CD.EjecutarProcedimientosalmacenados("EliminarArticulo", ref lst);
             }
             catch (Exception ex)

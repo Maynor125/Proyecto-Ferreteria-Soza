@@ -171,6 +171,12 @@
       <DependentUpon>Almacen.cs</DependentUpon>
     </Compile>
     <Compile Include="BunifuDragControl.cs" />
+    <Compile Include="Cantidadproductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cantidadproductos.Designer.cs">
+      <DependentUpon>Cantidadproductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,13 @@
     <Compile Include="InicioA.Designer.cs">
       <DependentUpon>InicioA.cs</DependentUpon>
     </Compile>
+    <Compile Include="NuevoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevoCliente.Designer.cs">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParametrosVenta.cs" />
     <Compile Include="Productos_I.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -287,6 +300,9 @@
     <EmbeddedResource Include="Almacen.resx">
       <DependentUpon>Almacen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cantidadproductos.resx">
+      <DependentUpon>Cantidadproductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Carga.resx">
       <DependentUpon>Carga.cs</DependentUpon>
     </EmbeddedResource>
@@ -301,6 +317,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InicioA.resx">
       <DependentUpon>InicioA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevoCliente.resx">
+      <DependentUpon>NuevoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Productos_I.resx">
       <DependentUpon>Productos_I.cs</DependentUpon>

@@ -148,6 +148,7 @@ namespace Capa_de_presentacion
             this.bunifuToolTip1.SetToolTip(this.grid, "");
             this.bunifuToolTip1.SetToolTipIcon(this.grid, null);
             this.bunifuToolTip1.SetToolTipTitle(this.grid, "");
+            this.grid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid_CellContentClick);
             this.grid.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.grid_RowsAdded);
             this.grid.RowsRemoved += new System.Windows.Forms.DataGridViewRowsRemovedEventHandler(this.grid_RowsRemoved);
             // 

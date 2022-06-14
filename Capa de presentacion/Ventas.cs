@@ -14,7 +14,7 @@ namespace Capa_de_presentacion
     
     public partial class Ventas : Form
     {
-        
+        public List<ParametrosVenta> lista = new List<ParametrosVenta>();
         
         public Ventas()
         {
@@ -41,6 +41,22 @@ namespace Capa_de_presentacion
             bunifuToolTip1.SetToolTip(btnigual, "Cancelar venta");
            // Bunifu.Utils.ScrollbarBinder.BindPanel(Contenedordeproductos, bunifuVScrollBar2);
         }
+        public void LLenarDataGridView()
+        {
+            Decimal SumaSubTotal = 0;
+            Decimal SumaIgv = 0;
+            Decimal SumaTotal = 0;
+            for(int i=0;i<lista.Count;i++)
+            {
+                grid.Rows.Add();
+                grid.Rows[i].Cells[0].Value = lista[i].Descripcion;
+                grid.Rows[i].Cells[1].Value = lista[i].PrecioVenta;
+                grid.Rows[i].Cells[2].Value = lista[i].Cantidad;
+                grid.Rows[i].Cells[3].Value = lista[i].SubTotal;
+                SumaSubTotal = Convert.ToDecimal(grid.Rows[i].Cells[3].Value);
+                SumaIgv = Convert.ToDecimal(tbxivg.Text);
+            }
+        }
 
         private void bunifuVScrollBar3_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
         {
@@ -65,6 +81,11 @@ namespace Capa_de_presentacion
         private void bunifuVScrollBar2_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
         {
             
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

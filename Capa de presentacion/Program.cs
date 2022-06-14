@@ -11,6 +11,9 @@ namespace Capa_de_presentacion
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
+        /// 
+        public static int Evento;
+
         [STAThread]
         static void Main()
         {

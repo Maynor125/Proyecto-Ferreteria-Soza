@@ -210,7 +210,7 @@ Insert Articulo(Id_Categoria,Nombre,Marca,Id_Unidad,Cantidad,PrecioCompra,Precio
 
 Create Procedure ActualizarArticulo
 (
-Id_Articulo int,
+Id_A int,
 Id_Categoria Int,
 Nombre Varchar(50),
 Marca Varchar(50),
@@ -222,13 +222,14 @@ Imagen blob
 )
 update articulo set Id_Categoria=Id_Categoria ,Nombre=Nombre,Marca=Marca,Id_Unidad=Unidad,Cantidad=Cantidad,
 PrecioCompra=PrecioCompra,PrecioVenta=PrecioVenta,Imagen=Imagen
-where Id_Articulo=Id_Articulo;
+where Id_Articulo=Id_A;
+
 
 create procedure EliminarArticulo
 (
-Id_Articulo int
+Id_A int
 )
-delete from articulo where Id_Articulo like Id_Articulo;
+delete from articulo where Id_Articulo= Id_A;
 drop procedure EliminarArticulo;
 select*from articulo;
 

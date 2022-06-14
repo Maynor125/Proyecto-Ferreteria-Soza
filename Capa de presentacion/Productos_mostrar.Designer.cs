@@ -34,15 +34,16 @@ namespace Capa_de_presentacion
             this.P_Precio = new System.Windows.Forms.Label();
             this.P_Nombre = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.P_Imagen = new System.Windows.Forms.PictureBox();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
             this.LabelCantidad = new System.Windows.Forms.Label();
+            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.P_Imagen = new System.Windows.Forms.PictureBox();
+            this.lbid = new System.Windows.Forms.Label();
+            this.bunifuPanel2.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.P_Imagen)).BeginInit();
-            this.bunifuPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // P_Precio
@@ -73,32 +74,6 @@ namespace Capa_de_presentacion
             // 
             this.guna2Elipse1.BorderRadius = 10;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // bunifuPanel1
-            // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Silver;
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.bunifuPanel1.BorderRadius = 10;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.P_Imagen);
-            this.bunifuPanel1.Location = new System.Drawing.Point(7, 40);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(126, 107);
-            this.bunifuPanel1.TabIndex = 4;
-            // 
-            // P_Imagen
-            // 
-            this.P_Imagen.BackColor = System.Drawing.Color.Transparent;
-            this.P_Imagen.Image = ((System.Drawing.Image)(resources.GetObject("P_Imagen.Image")));
-            this.P_Imagen.Location = new System.Drawing.Point(6, 11);
-            this.P_Imagen.Name = "P_Imagen";
-            this.P_Imagen.Size = new System.Drawing.Size(115, 84);
-            this.P_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.P_Imagen.TabIndex = 1;
-            this.P_Imagen.TabStop = false;
             // 
             // guna2GradientButton1
             // 
@@ -150,11 +125,49 @@ namespace Capa_de_presentacion
             this.LabelCantidad.TabIndex = 7;
             this.LabelCantidad.Text = "0";
             // 
+            // bunifuPanel1
+            // 
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Silver;
+            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
+            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.bunifuPanel1.BorderRadius = 10;
+            this.bunifuPanel1.BorderThickness = 1;
+            this.bunifuPanel1.Controls.Add(this.P_Imagen);
+            this.bunifuPanel1.Location = new System.Drawing.Point(7, 40);
+            this.bunifuPanel1.Name = "bunifuPanel1";
+            this.bunifuPanel1.ShowBorders = true;
+            this.bunifuPanel1.Size = new System.Drawing.Size(126, 107);
+            this.bunifuPanel1.TabIndex = 4;
+            // 
+            // P_Imagen
+            // 
+            this.P_Imagen.BackColor = System.Drawing.Color.Transparent;
+            this.P_Imagen.Image = ((System.Drawing.Image)(resources.GetObject("P_Imagen.Image")));
+            this.P_Imagen.Location = new System.Drawing.Point(6, 11);
+            this.P_Imagen.Name = "P_Imagen";
+            this.P_Imagen.Size = new System.Drawing.Size(115, 84);
+            this.P_Imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.P_Imagen.TabIndex = 1;
+            this.P_Imagen.TabStop = false;
+            // 
+            // lbid
+            // 
+            this.lbid.AutoSize = true;
+            this.lbid.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(78)))), ((int)(((byte)(145)))));
+            this.lbid.Location = new System.Drawing.Point(200, 150);
+            this.lbid.Name = "lbid";
+            this.lbid.Size = new System.Drawing.Size(26, 18);
+            this.lbid.TabIndex = 7;
+            this.lbid.Text = "00";
+            // 
             // Productos_mostrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(225)))), ((int)(((byte)(225)))));
+            this.Controls.Add(this.lbid);
             this.Controls.Add(this.bunifuPanel2);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.bunifuPanel1);
@@ -163,10 +176,10 @@ namespace Capa_de_presentacion
             this.Name = "Productos_mostrar";
             this.Size = new System.Drawing.Size(142, 209);
             this.Load += new System.EventHandler(this.Productos_mostrar_Load);
-            this.bunifuPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.P_Imagen)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             this.bunifuPanel2.PerformLayout();
+            this.bunifuPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.P_Imagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +195,6 @@ namespace Capa_de_presentacion
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         public System.Windows.Forms.Label LabelCantidad;
         public Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        public System.Windows.Forms.Label lbid;
     }
 }

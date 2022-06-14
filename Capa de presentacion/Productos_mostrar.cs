@@ -31,9 +31,10 @@ namespace Capa_de_presentacion
         {
 
         }
-
+        public bool btnprec = false;
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
+            btnprec = true;
         }
     }
 }

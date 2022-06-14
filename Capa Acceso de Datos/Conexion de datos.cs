@@ -12,7 +12,7 @@ namespace Capa_Acceso_de_Datos
     public class Conexion_de_datos
     {
         //Conexion a mysql....
-        public MySqlConnection ObtenerConexion = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=Madara125;");
+        public MySqlConnection ObtenerConexion = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=kagasagua;");
 
         public void Conectarmy()
         {

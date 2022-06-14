@@ -16,40 +16,11 @@ namespace Capa_de_presentacion
     public partial class Productos_I : Form
     {
         Articulos V = new Articulos();
-        Producto P = new Producto();
+        
+      
+       
         public byte[] imagen;
-        public void CargarListado()
-        {
-            DataTable dt = new DataTable();
-          
-            dt = V.Listar_Articulos();
-            MemoryStream ms1 = new MemoryStream(imagen);
-            Bitmap bm = new Bitmap(ms1);
-            try
-            {
-                grid.Rows.Clear();
-                for (int i = 0; i < dt.Rows.Count; i++)
-                {
-                    grid.Rows.Add(imageList1.Images[1]);
-                    grid.Rows[i].Cells[1].Value = dt.Rows[i][0].ToString();
-                    grid.Rows[i].Cells[2].Value = dt.Rows[i][1].ToString();
-                    grid.Rows[i].Cells[3].Value = dt.Rows[i][2].ToString();
-                    grid.Rows[i].Cells[4].Value = dt.Rows[i][3].ToString();
-                    grid.Rows[i].Cells[5].Value = dt.Rows[i][4].ToString();
-                    grid.Rows[i].Cells[6].Value = dt.Rows[i][5].ToString();
-                    grid.Rows[i].Cells[7].Value=(imageList2.Images[1]);
-                    grid.Rows[i].Cells[8].Value = dt.Rows[i][6].ToString();
-                    grid.Rows[i].Cells[9].Value=(imageList2.Images[0]);
-                    grid.Rows[i].Cells[10].Value = dt.Rows[i][7].ToString();
-   
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            grid.ClearSelection();
-        }
+       
         public Productos_I()
         {
             InitializeComponent();
@@ -68,14 +39,50 @@ namespace Capa_de_presentacion
             fh.Show();
         }
         private void Datos2_Load(object sender, EventArgs e)
-        {
+        {  
+           
             panelsearcgh.Size = new Size(92, 35);
+         
             CargarListado();
+
             toolTip1.SetToolTip(bunifuImageButton1, "Agregar nuevo producto");
             toolTip1.SetToolTip(bunifuImageButton2, "Actualizar Producto");
             toolTip1.SetToolTip(bunifuImageButton3, "Eliminar producto");
             toolTip1.SetToolTip(bunifuImageButton4, "Detalles del producto");
-            toolTip1.SetToolTip(opcionesbuscar, "Buscar por medio de.....");
+            toolTip1.SetToolTip(opcionesbuscar, "Buscar por medio de....."); 
+     
+        }
+        public void CargarListado()
+        {
+
+            DataTable dt = V.Listar_Articulos();
+
+            //MemoryStream ms1 = new MemoryStream(imagen);
+            //Bitmap bm = new Bitmap(ms1);
+            try
+            {
+                grid.Rows.Clear();
+                for (int i = 0; i < dt.Rows.Count; i++)
+                {
+                    grid.Rows.Add(imageList1.Images[1]);
+                    grid.Rows[i].Cells[1].Value = dt.Rows[i][0].ToString();
+                    grid.Rows[i].Cells[2].Value = dt.Rows[i][1].ToString();
+                    grid.Rows[i].Cells[3].Value = dt.Rows[i][2].ToString();
+                    grid.Rows[i].Cells[4].Value = dt.Rows[i][3].ToString();
+                    grid.Rows[i].Cells[5].Value = dt.Rows[i][4].ToString();
+                    grid.Rows[i].Cells[6].Value = dt.Rows[i][5].ToString();
+                    grid.Rows[i].Cells[7].Value = (imageList2.Images[1]);
+                    grid.Rows[i].Cells[8].Value = dt.Rows[i][6].ToString();
+                    grid.Rows[i].Cells[9].Value = (imageList2.Images[0]);
+                    grid.Rows[i].Cells[10].Value = dt.Rows[i][7].ToString();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            grid.ClearSelection();
         }
 
         private void grid_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
@@ -202,9 +209,9 @@ namespace Capa_de_presentacion
         {
             if (grid.SelectedRows.Count > 0)
             {
-               
+                Producto P = new Producto();
                 P.Show();
-                P.cbxCategoria.Text = Convert.ToString( grid.CurrentRow.Cells[2].Value.ToString());
+                P.cbxCategoria.Text = Convert.ToString(grid.CurrentRow.Cells[2].Value.ToString());
                 P.txbproducto.Text = grid.CurrentRow.Cells[3].Value.ToString();
                 P.txbxmarca.Text = grid.CurrentRow.Cells[4].Value.ToString();
                 P.cbxUnidad.Text = grid.CurrentRow.Cells[5].Value.ToString();
@@ -215,7 +222,7 @@ namespace Capa_de_presentacion
 
             else
             {
-                MessageBox.Show("Debe Seleccionar la Fila a Editar.", "Sistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Debe Seleccionar la Fila a Editar.", "\tSistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
@@ -225,7 +232,7 @@ namespace Capa_de_presentacion
             if (grid.SelectedRows.Count > 0)
             {
                 DialogResult ORe;
-                ORe = MessageBox.Show("Al eliminar este Articulos podria afectar otros datos\n\t\tEliminar aun asi", "Advertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                ORe = MessageBox.Show("Al eliminar este Articulos podria afectar otros datos\n\t\tEliminar aun asi", "\tAdvertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (ORe == DialogResult.OK)
                 {
                     id_Prod = (grid.CurrentRow.Cells[1].Value.ToString());
@@ -239,7 +246,12 @@ namespace Capa_de_presentacion
 
             }
             else
-                MessageBox.Show("No se pudo eliminar, por baboso");
+                MessageBox.Show("Seleccione una fila de la list", "\tSistema de ventas", MessageBoxButtons.OK,MessageBoxIcon.Error);
+        }
+
+        private void grid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
