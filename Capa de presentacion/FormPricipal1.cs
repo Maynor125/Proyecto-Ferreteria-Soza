@@ -664,6 +664,7 @@ namespace Capa_de_presentacion
 
         private void btnalmacen1_Click(object sender, EventArgs e)
         {
+            Abrir_Form(new Productos_I());
             activarbtn(sender, Color.FromArgb(227, 239, 241));
         }
 

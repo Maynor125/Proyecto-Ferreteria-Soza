@@ -21,5 +21,11 @@ namespace Capa_de_presentacion
         {
 
         }
+
+        private void InicioA_Load(object sender, EventArgs e)
+        {
+            MostrarPro Vari = new MostrarPro();
+            Vari.LLenarcuadroinicio(flowLayoutPanel1);
+        }
     }
 }

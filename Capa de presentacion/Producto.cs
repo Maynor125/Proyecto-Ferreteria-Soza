@@ -63,9 +63,19 @@ namespace Capa_de_presentacion
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            string Lugar="";
+            if(guna2CustomRadioButton1.Checked==true)
+            {
+                Lugar = "Ferreteria";
+            }
+            else if(guna2CustomRadioButton2.Checked==true)
+            {
+                Lugar = "Almacen";
+            }
             MemoryStream MS = new MemoryStream();
             pictureBox1.Image.Save(MS, ImageFormat.Png);
             byte[] Bytes = MS.ToArray();
+
             if (cbxCategoria.Text.Length != 0)
             {
                 if (cbxCategoria.Text.Length != 0)
@@ -101,42 +111,51 @@ namespace Capa_de_presentacion
                                     if (txbxpv.Text.Length != 0)
                                     {
                                         errorProvider1.SetError(txbxpv, "");
-                                    }
-                                    if (Program.Evento == 0)
-                                    {
-                                        Variable.Categoria = Convert.ToInt32(cbxCategoria.SelectedValue.ToString());
-                                        Variable.Nombre_Producto = txbproducto.Text;
-                                        Variable.Marca = txbxmarca.Text;
-                                        Variable.Tipo = Convert.ToInt32(cbxUnidad.SelectedValue.ToString());
-                                        Variable.Cantidad = Convert.ToInt32(tbxcantidad.Text);
-                                        Variable.Precio_Compra = Convert.ToDecimal(tbxpc.Text);
-                                        Variable.Precio_Venta = Convert.ToDecimal(txbxpv.Text);
-                                        Variable.Imagen = Bytes;
-                                        Variable.RegistrarProductos();
 
-                                        Productos_I D = new Productos_I();
-                                        this.Visible = false;
-                                        bunifuSnackbar1.Show(D, "Producto agregado exitosamente");
+                                        if (guna2CustomRadioButton1.Checked == false && guna2CustomRadioButton2.Checked == false)
+                                        {
+                                            MessageBox.Show("Debe elegir un lugar de locacion");
+                                        }
+                                        else
+                                        {
+                                            if (Program.Evento == 0)
+                                            {
+                                                Variable.Categoria = Convert.ToInt32(cbxCategoria.SelectedValue.ToString());
+                                                Variable.Nombre_Producto = txbproducto.Text;
+                                                Variable.Marca = txbxmarca.Text;
+                                                Variable.Tipo = Convert.ToInt32(cbxUnidad.SelectedValue.ToString());
+                                                Variable.Cantidad = Convert.ToInt32(tbxcantidad.Text);
+                                                Variable.Precio_Compra = Convert.ToDecimal(tbxpc.Text);
+                                                Variable.Precio_Venta = Convert.ToDecimal(txbxpv.Text);
+                                                Variable.Imagen = Bytes;
+                                                Variable.Lugar = Lugar;
+                                                Variable.RegistrarProductos();
 
-                                        D.CargarListado();
-                                    }
-                                    else if(Program.Evento==1)
-                                    {
-                                        Variable.Categoria = Convert.ToInt32(cbxCategoria.SelectedValue.ToString());
-                                        Variable.Nombre_Producto = txbproducto.Text;
-                                        Variable.Marca = txbxmarca.Text;
-                                        Variable.Tipo = Convert.ToInt32(cbxUnidad.SelectedValue.ToString());
-                                        Variable.Cantidad = Convert.ToInt32(tbxcantidad.Text);
-                                        Variable.Precio_Compra = Convert.ToDecimal(tbxpc.Text);
-                                        Variable.Precio_Venta = Convert.ToDecimal(txbxpv.Text);
-                                        Variable.Imagen = Bytes;
-                                        Variable.AtualizarProductos();
+                                                Productos_I D = new Productos_I();
+                                                this.Visible = false;
+                                                bunifuSnackbar1.Show(D, "Producto agregado exitosamente");
 
-                                        Productos_I D = new Productos_I();
-                                        this.Visible = false;
-                                        bunifuSnackbar1.Show(D, "Producto Actualizado exitosamente");
+                                                D.CargarListado();
+                                            }
+                                            else if (Program.Evento == 1)
+                                            {
+                                                Variable.Categoria = Convert.ToInt32(cbxCategoria.SelectedValue.ToString());
+                                                Variable.Nombre_Producto = txbproducto.Text;
+                                                Variable.Marca = txbxmarca.Text;
+                                                Variable.Tipo = Convert.ToInt32(cbxUnidad.SelectedValue.ToString());
+                                                Variable.Cantidad = Convert.ToInt32(tbxcantidad.Text);
+                                                Variable.Precio_Compra = Convert.ToDecimal(tbxpc.Text);
+                                                Variable.Precio_Venta = Convert.ToDecimal(txbxpv.Text);
+                                                Variable.Imagen = Bytes;
+                                                Variable.AtualizarProductos();
 
-                                        D.CargarListado();
+                                                Productos_I D = new Productos_I();
+                                                this.Visible = false;
+                                                bunifuSnackbar1.Show(D, "Producto Actualizado exitosamente");
+
+                                                D.CargarListado();
+                                            }
+                                        }
                                     }
                                 }
                                 else

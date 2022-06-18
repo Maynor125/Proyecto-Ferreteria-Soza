@@ -57,7 +57,8 @@ Barrio Varchar(30)Not Null,
 Direccion Varchar(100) Not Null,
 Primary Key(ID_Empleado)
 )engine=innoDB;
-drop table  Empleado;
+alter table Empleado drop column Barrio;
+alter table Empleado add Telefono varchar(15);
 
 /*Creacion de la tabla Clientes.*/
 Create Table Cliente
@@ -257,4 +258,83 @@ insert DetalleVenta(Id_Producto,Id_Venta,Cantidad,Igv,SubTotal)
 values (Id_A,Id_V,cantidad,Ivg,SubTotal);
 update Articulo set Cantidad=Stock-cantidad where Id_Articulo=Id_A;
 
-drop procedure IngresarDetalleVenta
+drop procedure IngresarDetalleVenta;
+
+create procedure AgregarCategoria
+(
+ Nombrecategoria varchar(40)
+)
+insert Categoria(Descripcion) value(NombreCategoria);
+create procedure ActualizarCategoria
+(
+id int,
+ Nombrecategoria varchar(40)
+)
+update Categoria set Descripcion=Nombrecategoria where Id_Categoria=id;
+create procedure EliminarCategoria
+(
+in id int
+)
+delete from Categoria where Id_Categoria=id;
+drop procedure EliminarCategoria
+
+DELIMITER //
+Create procedure Buscar_Articulo (
+IN dato varchar(50)
+, in ind integer
+)
+begin
+if (ind = 0)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad  and a.Nombre like CONCAT('%',dato,'%');
+else if (ind = 1)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.Marca like  CONCAT('%',dato,'%');
+else if (ind = 2)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad  and c.Descripcion like CONCAT('%',dato,'%');
+end if;
+end if;
+end if;
+end //
+DELIMITER ;
+
+select*from Empleado;
+
+create procedure IngresarEmpleado
+(
+cedula varchar(20),
+nombres varchar(40),
+apellidos varchar(40),
+sexo char(1),
+direccion varchar(50),
+telefono varchar(50)
+)
+insert Empleado(Cedula,Apellidos,Nombres,Sexo,Direccion,Telefono)
+value (cedula,apellidos,nombres,sexo,direccion,telefono);
+
+
+create procedure ActualizarEmpleado
+(
+id_e int,
+cedula varchar(20),
+nombres varchar(40),
+apellidos varchar(40),
+sexo char(1),
+direccion varchar(50),
+telefono varchar(50)
+)
+update Empleado set Cedula=cedula,Apellidos=apellidos,Nombres=nombres,Sexo=sexo,Direccion=direccion,
+Telefono=telefono where Id_Empleado=id_e;
+
+create procedure eliminarempleado
+(
+id int
+)
+delete from Empleado where Id_Empleado=id;
+
+create procedure MostrarEmpleado
+(
+)
+select*From Empleado;
+select Id_Articulo,Nombre,Cantidad from Articulo where Cantidad<6;

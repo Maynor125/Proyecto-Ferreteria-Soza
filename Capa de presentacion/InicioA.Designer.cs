@@ -67,7 +67,7 @@ namespace Capa_de_presentacion
             this.bunifuUserControl1.ColorContrastOnHover = 30;
             this.bunifuUserControl1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuUserControl1.Image = null;
-            this.bunifuUserControl1.ImageMargin = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.bunifuUserControl1.ImageMargin = new System.Windows.Forms.Padding(0);
             this.bunifuUserControl1.Location = new System.Drawing.Point(4, 12);
             this.bunifuUserControl1.Name = "bunifuUserControl1";
             this.bunifuUserControl1.ShowBorders = true;
@@ -129,7 +129,8 @@ namespace Capa_de_presentacion
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.Menu;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(825, 50);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(333, 221);
@@ -170,6 +171,7 @@ namespace Capa_de_presentacion
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InicioA";
             this.Text = "InicioA";
+            this.Load += new System.EventHandler(this.InicioA_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

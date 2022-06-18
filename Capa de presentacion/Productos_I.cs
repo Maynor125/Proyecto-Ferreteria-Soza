@@ -16,9 +16,11 @@ namespace Capa_de_presentacion
     public partial class Productos_I : Form
     {
         Articulos V = new Articulos();
-        
-      
-       
+        Categoria C = new Categoria();
+        public int indice;
+
+
+
         public byte[] imagen;
        
         public Productos_I()
@@ -26,36 +28,50 @@ namespace Capa_de_presentacion
             InitializeComponent();
         }
 
-        public void Abrir_Form(object FormEstad)
-        {
-            if (this.Minicontenedor.Controls.Count > 0)
-                this.Minicontenedor.Controls.RemoveAt(0);
-            Form fh = FormEstad as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.Minicontenedor.Controls.Add(fh);
-            this.Minicontenedor.Tag = fh;
-            fh.BringToFront();
-            fh.Show();
-        }
+       
         private void Datos2_Load(object sender, EventArgs e)
         {  
            
             panelsearcgh.Size = new Size(92, 35);
-         
-            CargarListado();
 
+            CargarListado();
+            CargarListadoCategoria();
+            indice = 0;
             toolTip1.SetToolTip(bunifuImageButton1, "Agregar nuevo producto");
             toolTip1.SetToolTip(bunifuImageButton2, "Actualizar Producto");
             toolTip1.SetToolTip(bunifuImageButton3, "Eliminar producto");
-            toolTip1.SetToolTip(bunifuImageButton4, "Detalles del producto");
+            toolTip1.SetToolTip(bunifuImageButton4, "Eliminar categoria");
+            toolTip1.SetToolTip(bunifuImageButton5, "Editar categoria");
+            toolTip1.SetToolTip(bunifuImageButton6, "Agregar categoria");
             toolTip1.SetToolTip(opcionesbuscar, "Buscar por medio de....."); 
      
         }
+        public void CargarListadoCategoria()
+        {
+            DataTable dt1 = C.Listar_Categoria();
+            try
+            {
+                gridcategorias.Rows.Clear();
+                for (int i = 0; i < dt1.Rows.Count; i++)
+                {
+                    gridcategorias.Rows.Add(imageList1.Images[2]);
+                    gridcategorias.Rows[i].Cells[1].Value = dt1.Rows[i][0].ToString();
+                    gridcategorias.Rows[i].Cells[2].Value = dt1.Rows[i][1].ToString();
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            grid.ClearSelection();
+        }
+    
         public void CargarListado()
         {
 
             DataTable dt = V.Listar_Articulos();
+            
 
             //MemoryStream ms1 = new MemoryStream(imagen);
             //Bitmap bm = new Bitmap(ms1);
@@ -77,6 +93,7 @@ namespace Capa_de_presentacion
                     grid.Rows[i].Cells[10].Value = dt.Rows[i][7].ToString();
 
                 }
+               
             }
             catch (Exception ex)
             {
@@ -172,6 +189,7 @@ namespace Capa_de_presentacion
 
         private void buscar2_Click(object sender, EventArgs e)
         {
+            indice = 1;
             buscar2.Location = new Point(9, 4);
             buscar1.Visible = false;
             panelsearcgh.Size = new Size(92, 35);
@@ -181,6 +199,7 @@ namespace Capa_de_presentacion
 
         private void buscar3_Click(object sender, EventArgs e)
         {
+            indice = 2;
             buscar3.Location = new Point(9, 4);
             buscar1.Visible = false;
             panelsearcgh.Size = new Size(92, 35);
@@ -189,6 +208,7 @@ namespace Capa_de_presentacion
 
         private void buscar1_Click(object sender, EventArgs e)
         {
+            indice = 0;
             panelsearcgh.Size = new Size(92, 35);
             txbxbuscarproducto.PlaceholderText = "Buscar producto por el nombre...";
         }
@@ -253,5 +273,100 @@ namespace Capa_de_presentacion
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            Categoria a = new Categoria();
+            string id_Prod;
+            if (gridcategorias.SelectedRows.Count > 0)
+            {
+                DialogResult ORe;
+                ORe = MessageBox.Show("Al eliminar esta categoria se eliminaran todos los articulos que pertenescan a ella \n\t\tEliminar aun asi", "\tAdvertencia", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                if (ORe == DialogResult.OK)
+                {
+                    id_Prod = (gridcategorias.CurrentRow.Cells[1].Value.ToString());
+                    a.ID = Convert.ToInt32(id_Prod);
+                    a.EliminarArticulos();
+                    MessageBox.Show("Eliminado correctamente");
+                    CargarListadoCategoria();
+
+                }
+                else MessageBox.Show("Eliminacion cancelada");
+
+            }
+            else
+                MessageBox.Show("Seleccione una fila de la list", "\tSistema de ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+        }
+
+        private void bunifuImageButton5_Click(object sender, EventArgs e)
+        {
+            if (gridcategorias.SelectedRows.Count > 0)
+            {
+                AgregarCategoria P = new AgregarCategoria();
+                P.Show();
+               
+                P.guna2TextBox1.Text = grid.CurrentRow.Cells[2].Value.ToString();
+            }
+
+            else
+            {
+                MessageBox.Show("Debe Seleccionar la Fila a Editar.", "\tSistema de Ventas.", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
+
+        private void bunifuImageButton6_Click(object sender, EventArgs e)
+        {
+            AgregarCategoria a = new AgregarCategoria();
+            a.Show();
+        }
+
+        private void txbxbuscarproducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
+
+        private void txbxbuscarproducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbxbuscarproducto_TextChange(object sender, EventArgs e)
+        {
+            if(indice >=0 )
+            {
+                DataTable table = new DataTable();
+                string dato;
+                dato = txbxbuscarproducto.Text;
+                table = V.BuscarArticulo(dato, indice);
+                grid.Rows.Clear();
+                for (int i = 0; i < table.Rows.Count; i++)
+                {
+                    grid.Rows.Add(imageList1.Images[1]);
+                    grid.Rows[i].Cells[1].Value = table.Rows[i][0].ToString();
+                    grid.Rows[i].Cells[2].Value = table.Rows[i][1].ToString();
+                    grid.Rows[i].Cells[3].Value = table.Rows[i][2].ToString();
+                    grid.Rows[i].Cells[4].Value = table.Rows[i][3].ToString();
+                    grid.Rows[i].Cells[5].Value = table.Rows[i][4].ToString();
+                    grid.Rows[i].Cells[6].Value = table.Rows[i][5].ToString();
+                    grid.Rows[i].Cells[7].Value = (imageList2.Images[1]);
+                    grid.Rows[i].Cells[8].Value = table.Rows[i][6].ToString();
+                    grid.Rows[i].Cells[9].Value = (imageList2.Images[0]);
+                    grid.Rows[i].Cells[10].Value = table.Rows[i][7].ToString();
+                }
+
+            }
+        }
     }
+   
 }

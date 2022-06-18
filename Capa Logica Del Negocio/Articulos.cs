@@ -26,13 +26,21 @@ namespace Capa_Logica_Del_Negocio
         public Decimal Precio_Venta { get; set; }
 
         public byte[] Imagen { get; set; }
+        public string Lugar { get; set; }
 
         public DataTable Listar_Articulos()
         {
             return CD.Listado("ListarProductos", null);
         }
+        public DataTable BuscarArticulo(String Datos,int indice)
+        {
+            DataTable dt = new DataTable();
+            List<Parametros> lst = new List<Parametros>();
+            lst.Add(new Parametros("@Dato", Datos));
+            lst.Add(new Parametros("@ind", indice));
+            return dt = CD.Listado("Buscar_Articulo", lst);
+        }
 
-        
         public void RegistrarProductos()
         {
 
@@ -48,6 +56,7 @@ namespace Capa_Logica_Del_Negocio
                 lst.Add(new Parametros("@PrecioCompra", Precio_Compra));
                 lst.Add(new Parametros("@PrecioVenta",Precio_Venta));
                 lst.Add(new Parametros("@Imagen", Imagen));
+                lst.Add(new Parametros("@lugar", Lugar));
                 CD.EjecutarProcedimientosalmacenados("RegistrarArticulo", ref lst);
             }
             catch (Exception ex)
@@ -71,6 +80,7 @@ namespace Capa_Logica_Del_Negocio
                 lst.Add(new Parametros("@PrecioCompra", Precio_Compra));
                 lst.Add(new Parametros("@PrecioVenta", Precio_Venta));
                 lst.Add(new Parametros("@Imagen", Imagen));
+                lst.Add(new Parametros("@lugar", Lugar));
                 CD.EjecutarProcedimientosalmacenados("ActualizarArticulo", ref lst);
             }
             catch (Exception ex)

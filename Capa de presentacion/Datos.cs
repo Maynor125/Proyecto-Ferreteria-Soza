@@ -41,7 +41,7 @@ namespace Capa_de_presentacion
 
 
                 grid.Rows.Add(new object[]
-                    {
+                    {/*
                         imageList1.Images[0],
                         Faker.NumberFaker.Number(),
                         Faker.NameFaker.FirstName(),
@@ -51,7 +51,7 @@ namespace Capa_de_presentacion
                        imageList2.Images[0],
                         Faker.NumberFaker.Number()
 
-
+                    */
                     }
                     ) ;
             }

@@ -30,7 +30,7 @@ namespace Capa_de_presentacion
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPricipal1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
@@ -639,9 +639,9 @@ namespace Capa_de_presentacion
             this.panel4.Controls.Add(this.btncompras2);
             this.panel4.Controls.Add(this.iconButton10);
             this.guna2Transition1.SetDecoration(this.panel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel4.Location = new System.Drawing.Point(12, 192);
+            this.panel4.Location = new System.Drawing.Point(13, 253);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(187, 109);
+            this.panel4.Size = new System.Drawing.Size(187, 48);
             this.panel4.TabIndex = 3;
             // 
             // btncompras1
@@ -725,7 +725,7 @@ namespace Capa_de_presentacion
             this.panel3.Controls.Add(this.btnventas1);
             this.panel3.Controls.Add(this.iconButton8);
             this.guna2Transition1.SetDecoration(this.panel3, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.panel3.Location = new System.Drawing.Point(13, 144);
+            this.panel3.Location = new System.Drawing.Point(13, 205);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(186, 42);
             this.panel3.TabIndex = 2;
@@ -811,7 +811,7 @@ namespace Capa_de_presentacion
             this.guna2Transition1.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Location = new System.Drawing.Point(12, 90);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(190, 48);
+            this.panel2.Size = new System.Drawing.Size(190, 109);
             this.panel2.TabIndex = 1;
             // 
             // btnalmacen2
@@ -1183,22 +1183,22 @@ namespace Capa_de_presentacion
             // 
             this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Leaf;
             this.guna2Transition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 1F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 1F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation1;
             // 
             // FormPricipal1
             // 

@@ -118,7 +118,7 @@ namespace Capa_de_presentacion
         {
             bunifuPanel1.Visible = false;
             Activar_panel(sender, Color.FromArgb(34, 78, 145));
-            Abrir_Form(new Productos_I());
+            Abrir_Form(new Articulos2());
          
         }
         string yo;

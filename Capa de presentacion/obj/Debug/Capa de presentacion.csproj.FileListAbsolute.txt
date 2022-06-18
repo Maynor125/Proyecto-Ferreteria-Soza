@@ -253,7 +253,6 @@ C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentaci
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Bunifu.UI.WinForms.Deprecated.dll
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Bunifu.Utils.dll
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Capa Logica Del Negocio.dll
-C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Faker.dll
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Capa Acceso de Datos.dll
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Google.Protobuf.dll
@@ -332,3 +331,47 @@ C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentaci
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa de presentacion.pdb
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.NuevoCliente.resources
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.Cantidadproductos.resources
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.Articulos_pocas_existencias.resources
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.Articulos2.resources
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.EmpleadosRegistrar.resources
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.Grafica1.resources
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa de presentacion\obj\Debug\Capa_de_presentacion.AgregarCategoria.resources

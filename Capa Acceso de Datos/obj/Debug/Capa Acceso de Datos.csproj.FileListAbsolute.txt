@@ -42,3 +42,42 @@ C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Dat
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.csproj.CopyComplete
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.dll
 C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\obj\Debug\Capa Acceso de Datos.pdb
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Usuario\OneDrive\Escritorio\Proyecto-Ferreteria-Soza\Capa Acceso de Datos\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
