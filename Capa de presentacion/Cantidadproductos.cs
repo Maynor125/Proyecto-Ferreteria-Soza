@@ -16,5 +16,13 @@ namespace Capa_de_presentacion
         {
             InitializeComponent();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Program.Evento2 = 4;
+            //Ventas v = new Ventas();
+            //v.Show();
+            this.Close();
+        }
     }
 }

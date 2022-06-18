@@ -235,11 +235,11 @@
     <Compile Include="EmpleadosRegistrar.designer.cs">
       <DependentUpon>EmpleadosRegistrar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Grafica1.cs">
+    <Compile Include="Grafico1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Grafica1.Designer.cs">
-      <DependentUpon>Grafica1.cs</DependentUpon>
+    <Compile Include="Grafico1.designer.cs">
+      <DependentUpon>Grafico1.cs</DependentUpon>
     </Compile>
     <Compile Include="InicioA.cs">
       <SubType>Form</SubType>
@@ -318,7 +318,6 @@
     <Compile Include="Proveedores.Designer.cs">
       <DependentUpon>Proveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -361,8 +360,8 @@
     <EmbeddedResource Include="EmpleadosRegistrar.resx">
       <DependentUpon>EmpleadosRegistrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Grafica1.resx">
-      <DependentUpon>Grafica1.cs</DependentUpon>
+    <EmbeddedResource Include="Grafico1.resx">
+      <DependentUpon>Grafico1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioA.resx">
       <DependentUpon>InicioA.cs</DependentUpon>
@@ -504,20 +503,5 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Content Include="SqlServerTypes\readme.htm" />
-    <Content Include="SqlServerTypes\x64\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\msvcr120.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

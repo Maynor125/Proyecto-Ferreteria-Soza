@@ -13,6 +13,8 @@ namespace Capa_de_presentacion
         /// </summary>
         /// 
         public static int Evento;
+        public static int Evento2;
+        public static int Evento3;
 
         [STAThread]
         static void Main()

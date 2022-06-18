@@ -118,6 +118,7 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(119, 28);
             this.guna2GradientButton1.TabIndex = 15;
             this.guna2GradientButton1.Text = "Listo";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // Cantidadproductos
             // 
@@ -143,7 +144,7 @@
         private Bunifu.UI.WinForms.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        public Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        public Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
     }
 }

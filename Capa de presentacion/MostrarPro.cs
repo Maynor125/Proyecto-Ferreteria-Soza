@@ -32,7 +32,8 @@ namespace Capa_de_presentacion
 
 
         //Conexion a la base de datos en una capa.........
-        public MySqlConnection Conex = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=kagasagua;");
+        public MySqlConnection Conex = new MySqlConnection("server=127.0.0.1;database=ferreteria_s;Uid=root;pwd=kagasagua;Allow User Variables=True;");
+        
         public void Conectar()
         {
             if (Conex.State == ConnectionState.Closed)
@@ -64,9 +65,10 @@ namespace Capa_de_presentacion
 
                 C.Controls.Add(A);
             }
-
+            Desconectar();
+            Conex.Dispose();
         }
-
+        public int I;
 
         //Metodo para cargar datos de la BD a los elementos del componente Productos mostrar.
         public void LLenarCuadros(FlowLayoutPanel Contenedordeproduct)
@@ -81,11 +83,11 @@ namespace Capa_de_presentacion
            
             MySqlDataReader Leer = C.ExecuteReader();
            
-            Productos_mostrar Var = new Productos_mostrar();
-
+           
             while (Leer.Read())
             {
-               
+                Productos_mostrar Var = new Productos_mostrar();
+
                 Id_Producto = Convert.ToInt32(Leer[0]);
                 Nombre_Producto = Leer[1].ToString();
                 Precio_Venta = Convert.ToDecimal(Leer[2]);
@@ -100,7 +102,6 @@ namespace Capa_de_presentacion
                 {
                     Var.LabelCantidad.Location = new Point(3,5);
                 }
-
               
                // Var.lblid.Text = Convert.ToString( Id_Producto);
                 Var.P_Nombre.Text = Nombre_Producto;
@@ -110,19 +111,49 @@ namespace Capa_de_presentacion
                 Bitmap bm = new Bitmap(ms1);
                 Var.P_Imagen.Image = bm;
 
+                if (Program.Evento3 == 3)
+                {
+                    I = Id_Producto;
+                }
+
                 Contenedordeproduct.Controls.Add(Var);
             }
-          //  CantidadArticulo Ca = new CantidadArticulo();
-            Ventas V = new Ventas();
 
-           /* void LLenarGrilla()
-            {
+            //if (Program.Evento3 == 3)
+            //{
+            //    I = Id_Producto;
+            //}
 
-                V.AgregarArticulo(Convert.ToInt32(Var.lblid.Text), Var.P_Nombre, Var.LabelCantidad, Var.P_Precio, Ca.guna2TextBox1);
-            }*/
-           
+            //Program.Evento3 = 0;
             Desconectar();
             Conex.Dispose();
         }
+        public void pasarParametros()
+        {
+             if (Program.Evento2 == 4)
+            {
+                Ventas V = new Ventas();
+                Cantidadproductos C = new Cantidadproductos();
+                Conectar();
+                string jaj = "select Nombre,PrecioVenta,Cantidad from Articulo where Id_Articulo=2";
+                MySqlCommand a = new MySqlCommand(jaj, Conex);             
+                a.Parameters.Add("Id", MySqlDbType.Int32).Value = I;
+                MySqlDataReader leer2 = a.ExecuteReader();
+                if (leer2.HasRows)
+                {
+                    while (leer2.Read()) // == this is the Read() method was called
+                    {
+                        string nombre = Convert.ToString(leer2[0]);
+                        decimal Precioventa = Convert.ToDecimal(leer2[1]);
+                        int cantidad = Convert.ToInt32(leer2[2]);
+                        Desconectar();
+
+                        int Cant = Convert.ToInt32(Int32.Parse(C.guna2TextBox1.Text));
+                        V.agregar(I, nombre, cantidad, Precioventa, Cant);
+                    }
+                }
+            }
+        }
     }
+
 }

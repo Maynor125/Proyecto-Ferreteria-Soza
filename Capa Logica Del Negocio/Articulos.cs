@@ -32,6 +32,14 @@ namespace Capa_Logica_Del_Negocio
         {
             return CD.Listado("ListarProductos", null);
         }
+        public DataTable Listar_ArticulosF()
+        {
+            return CD.Listado("MostrarProFerreteria", null);
+        }
+        public DataTable Listar_ArticulosA()
+        {
+            return CD.Listado("MostrarProAlmacen", null);
+        }
         public DataTable BuscarArticulo(String Datos,int indice)
         {
             DataTable dt = new DataTable();
@@ -40,7 +48,22 @@ namespace Capa_Logica_Del_Negocio
             lst.Add(new Parametros("@ind", indice));
             return dt = CD.Listado("Buscar_Articulo", lst);
         }
-
+        public DataTable BuscarArticuloFerreteria(String Datos, int indice)
+        {
+            DataTable dt = new DataTable();
+            List<Parametros> lst = new List<Parametros>();
+            lst.Add(new Parametros("@Dato", Datos));
+            lst.Add(new Parametros("@ind", indice));
+            return dt = CD.Listado("Buscar_ArticuloF", lst);
+        }
+        public DataTable BuscarArticuloAlmacen(String Datos, int indice)
+        {
+            DataTable dt = new DataTable();
+            List<Parametros> lst = new List<Parametros>();
+            lst.Add(new Parametros("@Dato", Datos));
+            lst.Add(new Parametros("@ind", indice));
+            return dt = CD.Listado("Buscar_ArticuloA", lst);
+        }
         public void RegistrarProductos()
         {
 

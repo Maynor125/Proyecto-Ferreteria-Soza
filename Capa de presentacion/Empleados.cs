@@ -51,12 +51,14 @@ namespace Capa_de_presentacion
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            Program.Evento = 0;
             EmpleadosRegistrar E = new EmpleadosRegistrar();
             E.Show();
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
+            Program.Evento = 1;
             if (grid.SelectedRows.Count > 0)
             {
                 EmpleadosRegistrar P=new EmpleadosRegistrar();

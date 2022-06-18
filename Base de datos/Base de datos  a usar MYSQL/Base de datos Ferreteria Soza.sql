@@ -30,7 +30,8 @@ Id_Unidad int auto_increment
 ,primary key(Id_Unidad)
 )engine=innoDB;
 insert into unidad_medida (Nombre) values ('Libras');
-
+insert into unidad_medida (Nombre) values ('Individual');
+insert into unidad_medida (Nombre) values ('LLardas');
 /*Creacion de la tabla Articulos.*/
 Create Table Articulo
 (Id_Articulo Int auto_increment,
@@ -44,7 +45,7 @@ PrecioVenta Decimal(6,2) Not Null,
 Imagen blob,
  Primary Key(Id_Articulo)
 )engine=innoDB;
-
+alter table Articulo add lugar varchar(20);
 /*Creacion de la tabla Empleados.*/
 Create Table Empleado
 (Id_Empleado Int auto_increment,
@@ -204,11 +205,12 @@ Unidad int,
 Cantidad Int,
 PrecioCompra Decimal(6,2),
 PrecioVenta Decimal(6,2),
-Imagen blob
+Imagen blob,
+lugar varchar(20)
 )
-Insert Articulo(Id_Categoria,Nombre,Marca,Id_Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen)
- Values(Id_Categoria,Nombre,Marca,Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen);
-
+Insert Articulo(Id_Categoria,Nombre,Marca,Id_Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen,lugar)
+ Values(Id_Categoria,Nombre,Marca,Unidad,Cantidad,PrecioCompra,PrecioVenta,Imagen,lugar);
+drop procedure ActualizarArticulo;
 Create Procedure ActualizarArticulo
 (
 Id_A int,
@@ -219,10 +221,11 @@ Unidad int,
 Cantidad Int,
 PrecioCompra Decimal(6,2),
 PrecioVenta Decimal(6,2),
-Imagen blob
+Imagen blob,
+lugar varchar(30)
 )
 update articulo set Id_Categoria=Id_Categoria ,Nombre=Nombre,Marca=Marca,Id_Unidad=Unidad,Cantidad=Cantidad,
-PrecioCompra=PrecioCompra,PrecioVenta=PrecioVenta,Imagen=Imagen
+PrecioCompra=PrecioCompra,PrecioVenta=PrecioVenta,Imagen=Imagen,lugar=lugar
 where Id_Articulo=Id_A;
 
 
@@ -299,7 +302,7 @@ end if;
 end //
 DELIMITER ;
 
-select*from Empleado;
+select*from articulo;
 
 create procedure IngresarEmpleado
 (
@@ -338,3 +341,58 @@ create procedure MostrarEmpleado
 )
 select*From Empleado;
 select Id_Articulo,Nombre,Cantidad from Articulo where Cantidad<6;
+select*from Articulo;
+create procedure MostrarProFerreteria
+(
+)
+select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad  and lugar="Ferreteria";
+
+create procedure MostrarProAlmacen
+(
+)
+select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad  and lugar="Almacen";
+
+
+DELIMITER //
+Create procedure Buscar_ArticuloF(
+IN dato varchar(50)
+, in ind integer
+)
+begin
+if (ind = 0)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.lugar="Ferreteria"  and a.Nombre like CONCAT('%',dato,'%');
+else if (ind = 1)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.lugar="Ferreteria"  and a.Marca like  CONCAT('%',dato,'%');
+else if (ind = 2)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.lugar="Ferreteria"  and  c.Descripcion like CONCAT('%',dato,'%');
+end if;
+end if;
+end if;
+end //
+DELIMITER ;
+insert into Unidad_Medida(Nombre)value(Individual)
+DELIMITER //
+Create procedure Buscar_ArticuloA(
+IN dato varchar(50)
+, in ind integer
+)
+begin
+if (ind = 0)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.lugar="Almacen"  and a.Nombre like CONCAT('%',dato,'%');
+else if (ind = 1)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.lugar="Almacen"  and a.Marca like  CONCAT('%',dato,'%');
+else if (ind = 2)
+then Select a.Id_Articulo,c.Descripcion,a.Nombre,a.Marca,u.Nombre,a.Cantidad,a.PrecioCompra,a.PrecioVenta from articulo a,Categoria c,unidad_medida u 
+where c.Id_Categoria=a.Id_Categoria and u.Id_Unidad=a.Id_Unidad and a.lugar="Almacen"  and  c.Descripcion like CONCAT('%',dato,'%');
+end if;
+end if;
+end if;
+end //
+DELIMITER ;

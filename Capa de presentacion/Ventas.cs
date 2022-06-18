@@ -1,21 +1,15 @@
-﻿using System;
+﻿using Capa_Logica_Del_Negocio;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Capa_Logica_Del_Negocio;
 
 namespace Capa_de_presentacion
 {
-    
+
     public partial class Ventas : Form
     {
         public List<ParametrosVenta> lista = new List<ParametrosVenta>();
-        
+        Venta V = new Venta();
         public Ventas()
         {
           
@@ -23,7 +17,10 @@ namespace Capa_de_presentacion
             LLenarControl();
          
         }
-
+        private void GenerarIdVenta()
+        {
+            txtidventa.Text = V.GenerarIdVenta();
+        }
         private void LLenarControl()
         {
             MostrarCate C = new MostrarCate();
@@ -33,6 +30,8 @@ namespace Capa_de_presentacion
         }
         private void Ventas_Load(object sender, EventArgs e)
         {
+            MostrarPro V = new MostrarPro();
+            V.pasarParametros();
             bunifuToolTip1.SetToolTip(bunifuImageButton1, "Imprimir");
             bunifuToolTip1.SetToolTip(bunifuImageButton2, "Seleccionar cliente");
             bunifuToolTip1.SetToolTip(bunifuImageButton3, "Guardar venta");
@@ -41,6 +40,25 @@ namespace Capa_de_presentacion
             bunifuToolTip1.SetToolTip(btnigual, "Cancelar venta");
            // Bunifu.Utils.ScrollbarBinder.BindPanel(Contenedordeproductos, bunifuVScrollBar2);
         }
+
+        public void agregar(int id,string nombre,int cantidad,decimal PrecioV,int Cantidad)
+        {
+            ParametrosVenta V = new ParametrosVenta();
+            Decimal Porcentaje;
+            Decimal Subt;
+            V.IdProducto = id;
+            V.IdVenta = Convert.ToInt32( txtidventa.Text);
+            V.Descripcion = nombre;
+            V.Cantidad = cantidad;
+            Porcentaje = (Convert.ToDecimal(tbxivg.Text) / 100) + 1;
+            Subt = PrecioV * Cantidad / Porcentaje;
+            V.Igv= Math.Round(Convert.ToDecimal(Subt) * (Convert.ToDecimal(tbxivg.Text) / (100)), 2);
+            V.SubTotal = Math.Round(Subt, 2);
+            lista.Add(V);
+            LLenarDataGridView();
+
+        }
+
         public void LLenarDataGridView()
         {
             Decimal SumaSubTotal = 0;
@@ -56,6 +74,8 @@ namespace Capa_de_presentacion
                 SumaSubTotal = Convert.ToDecimal(grid.Rows[i].Cells[3].Value);
                 SumaIgv = Convert.ToDecimal(tbxivg.Text);
             }
+            SumaTotal += SumaSubTotal + SumaIgv;
+            label3.Text = Convert.ToString(SumaTotal);
         }
 
         private void bunifuVScrollBar3_Scroll(object sender, Bunifu.UI.WinForms.BunifuVScrollBar.ScrollEventArgs e)
@@ -84,6 +104,11 @@ namespace Capa_de_presentacion
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

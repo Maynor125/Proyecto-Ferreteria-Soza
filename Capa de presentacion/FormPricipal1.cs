@@ -515,6 +515,8 @@ namespace Capa_de_presentacion
         private void btnreporte1_Click(object sender, EventArgs e)
         {
             activarbtn(sender, Color.FromArgb(227, 239, 241));
+            Abrir_Form(new Grafico1());
+
 
         }
 

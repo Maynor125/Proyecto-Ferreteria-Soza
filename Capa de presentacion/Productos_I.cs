@@ -222,6 +222,7 @@ namespace Capa_de_presentacion
         {
             Producto a = new Producto();
             a.Show();
+            Program.Evento = 0;
 
         }
 
@@ -238,6 +239,8 @@ namespace Capa_de_presentacion
                 P.tbxcantidad.Text = grid.CurrentRow.Cells[6].Value.ToString();
                 P.tbxpc.Text = grid.CurrentRow.Cells[8].Value.ToString();
                 P.txbxpv.Text = grid.CurrentRow.Cells[10].Value.ToString();
+
+                Program.Evento =1;
             }
 
             else
@@ -313,6 +316,7 @@ namespace Capa_de_presentacion
         {
             if (gridcategorias.SelectedRows.Count > 0)
             {
+                Program.Evento = 1;
                 AgregarCategoria P = new AgregarCategoria();
                 P.Show();
                
@@ -327,6 +331,7 @@ namespace Capa_de_presentacion
 
         private void bunifuImageButton6_Click(object sender, EventArgs e)
         {
+            Program.Evento = 0;
             AgregarCategoria a = new AgregarCategoria();
             a.Show();
         }
